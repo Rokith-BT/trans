@@ -34,7 +34,11 @@ jobs:
         run: npm run build
 
       - name: Clean IIS Directory
-        run: Remove-Item -Recurse -Force "C:\inetpub\wwwroot\webapp\*" 
+        # run: Remove-Item -Recurse -Force "C:\inetpub\wwwroot\webapp\*"
+        run: |
+          $path = "C:\inetpub\wwwroot\webapp"
+          Get-ChildItem -Path $path -Exclude "web.config" -Recurse | Remove-Item -Force -Recurse
+         
 
       - name: Copy Build to IIS Directory
         run: Copy-Item -Recurse -Force "build\*" "C:\inetpub\wwwroot\webapp\"
