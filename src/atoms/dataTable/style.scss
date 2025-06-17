@@ -1,0 +1,48 @@
+.ag-header-row {
+  background-color: #80459526;
+  .ag-header-cell-text {
+    color: #804595;
+    font-weight: 500;
+    font-size: 16px;
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      font-size: 13px;
+    }
+  }
+  .ag-header-cell-label {
+    justify-content: left;
+  }
+}
+.ag-cell {
+  font-size: 16px !important;
+  font-weight: 400;
+
+  @media (min-width: 1280px) and (max-width: 1599px)  {
+    font-size: 13px !important;
+  }
+}
+.ag-cell .textResponse{
+  @media (min-width: 1280px) and (max-width: 1599px)  {
+    font-size: 13px !important;
+  }
+}
+.textResponse{
+   @media (min-width: 1280px) and (max-width: 1599px)  {
+    font-size: 13px !important;
+  }
+}
+.MuiSelect-select {
+    @media (min-width: 1280px) and (max-width: 1599px)  {
+    font-size: 13px !important;
+  }
+}
+.custom-no-rows {
+  font-size: 18px;
+  font-weight: 500;
+  color: #c967a2;
+  padding: 20px;
+  text-align: center;
+}
+.ag-cell:focus {
+  outline: none !important;
+  border: none !important;
+}

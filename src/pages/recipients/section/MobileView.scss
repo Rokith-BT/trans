@@ -1,0 +1,32 @@
+.card {
+  width: 100%;
+  border: 1px solid #C967A2;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 12px;
+
+  .card-header {
+    .serial {
+      color: var(--Text-grey, #a1999f);
+      font-family: Roboto;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%; /* 12px */
+    }
+  }
+  .card-body {
+    .hospital {
+      .hospital_name {
+        color: #020202;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 14.4px */
+      }
+    }
+  }
+}

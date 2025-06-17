@@ -1,0 +1,96 @@
+{
+  "genderOptions": [
+    {
+      "value": "male",
+      "label": "Male"
+    },
+    {
+      "value": "female",
+      "label": "Female"
+    },
+    {
+      "value": "others",
+      "label": "Others"
+    }
+  ],
+  "bloodGroupOptions": [
+    {
+      "value": "B+",
+      "label": "B+"
+    },
+    {
+      "value": "A+",
+      "label": "A+"
+    },
+    {
+      "value": "O+",
+      "label": "O+"
+    },
+    {
+      "value": "AB+",
+      "label": "AB+"
+    },
+    {
+      "value": "B-",
+      "label": "B-"
+    },
+    {
+      "value": "A-",
+      "label": "A-"
+    },
+    {
+      "value": "O-",
+      "label": "O-"
+    },
+    {
+      "value": "AB-",
+      "label": "AB-"
+    }
+  ],
+  "RelationType": [
+    {
+      "value": "Father",
+      "label": "Father"
+    },
+    {
+      "value": "Mother",
+      "label": "Mother"
+    },
+    {
+      "value": "husband",
+      "label": "Husband"
+    },
+    {
+      "value": "wife",
+      "label": "Wife"
+    },
+    {
+      "value": "uncle",
+      "label": "Uncle"
+    },
+    {
+      "value": "sister",
+      "label": "Sister"
+    }
+  ],
+
+  "radioOption": [
+    { "label": "Yes", "value": "1", "required": true },
+    { "label": "No", "value": "0", "required": false }
+  ],
+  "numberOption": [
+    { "label": "1", "value": "1" },
+    { "label": "2", "value": "2" },
+    { "label": "3", "value": "3" },
+    { "label": "4", "value": "4" },
+    { "label": "5", "value": "5" }
+  ],
+   "qualifications": [
+    { "label": "Bsc", "value": "1" },
+    { "label": "MBA", "value": "2" },
+    { "label": "BE", "value": "3" },
+    { "label": "MBBS", "value": "4" },
+    { "label": "MS", "value": "5" }
+  ]
+}
+

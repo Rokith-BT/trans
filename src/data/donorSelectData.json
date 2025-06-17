@@ -1,0 +1,59 @@
+{
+  "HospitalName": [
+    { "value": "apollo hospital", "label": "Apollo Hospital" },
+    { "value": "chennai national hospital", "label": "Chennai National Hospital" }
+  ],
+  "Age": [
+    { "value": "below 20", "label": "Below 20" },
+    { "value": "Above 20", "label": "Above 20" }
+  ],
+  "HospitalType": [
+    { "value": "government hospital", "label": "Government Hospital" },
+    { "value": "private hospital", "label": "Private Hospital" }
+  ],
+  "Status": [
+    { "value": "local organ requested", "label": "Local Organ Requested" },
+    { "value": "local organ chosen", "label": "Local Organ Chosen" }
+  ],
+  "DateRange": [
+    { "value": "01.08.2024", "label": "01.08.2024" },
+    { "value": "02.08.2024", "label": "02.08.2024" }
+  ],
+  "MLC/Non-MLC": [
+    { "value": "yes", "label": "Yes" },
+    { "value": "no", "label": "No" }
+  ],
+  "ApnoeaStatus": [
+    { "value": "yes", "label": "Yes" },
+    { "value": "no", "label": "No" }
+  ],
+  "AtomRadioOptions": [
+    {
+      "value": "yes",
+      "label": "Yes",
+      "required": true
+    },
+    {
+      "value": "no",
+      "label": "No",
+      "required": false
+    }
+  ],
+  "checkBoxOption": [
+    {
+      "value": "written",
+      "label": "Written",
+      "required": true
+    },
+    {
+      "value": "audio",
+      "label": "Audio",
+      "required": true
+    },
+    {
+      "value": "video",
+      "label": "Video",
+      "required": true
+    }
+  ]
+}

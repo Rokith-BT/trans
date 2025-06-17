@@ -1,0 +1,78 @@
+.card {
+  width: 100%;
+  .card-body {
+    .trans-label {
+      // !text-[12px] text-[#A1999F] !font-[500]
+      font-size: 12px;
+      color: #a1999f;
+      font-weight: 500;
+    }
+    .trans-value {
+      font-size: 12px;
+      color: #804595;
+      font-weight: 500;
+    }
+  }
+}
+
+// .info-box {
+//   .row-label {
+//     font-size: 10px;
+//     color: #a1999f;
+//     font-weight: 500;
+//   }
+//   .row-value {
+//     font-size: 12px;
+//     color: #804595;
+//     font-weight: 500;
+//   }
+
+//   .info-row {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 100%;
+//     flex: 1;
+
+//     .info-label {
+//       font-size: 10px;
+//       color: #a1999f;
+//       font-weight: 500;
+//       // Optionally add:
+//       flex: 1;
+//     }
+
+//     .info-value {
+//       font-size: 12px;
+//       color: #804595;
+//       font-weight: 500;
+//       flex: 1;
+//     }
+//   }
+// }
+.row-label {
+  font-size: 10px !important;
+  color: #a1999f;
+  font-weight: 500;
+}
+.row-value {
+  font-size: 10px;
+  color: #c967a2;
+  font-weight: 500;
+}
+.info-label {
+  font-size: 10px !important;
+  color: #a1999f;
+  font-weight: 500;
+}
+.info-value {
+  font-size: 10px;
+  color: #1a0616;
+  font-weight: 500;
+  flex: 1;
+}
+.info-label-sp {
+  font-size: 10px;
+  color: #c967a280;
+  font-weight: 500;
+}

@@ -1,0 +1,203 @@
+[
+  {
+    "name": "Dashboard",
+    "route": "/dashboard",
+    "children": [],
+    "icon": "DashboardNavImage"
+  },
+  {
+    "name": "Donor Management",
+    "route": null,
+
+    "children": [
+      {
+        "name": "Manage Donor",
+        "route": "/donors",
+        "children": [],
+        "icon": "ManageDonorIcon"
+      },
+      {
+        "name": "Live Transplant",
+        "route": "/donors/livetransplant",
+        "children": [],
+        "icon": "LiverTransplantIcon"
+      }
+    ],
+    "icon": "DonarNavImage"
+  },
+  {
+    "name": "Approval Management",
+    "route": "/approvals",
+    "children": [],
+    "icon": "ApprovalNavImage"
+  },
+  {
+    "name": "Hospital Management",
+    "route": "/hospitals",
+    "children": [],
+    "icon": "HospitalNavImage"
+  },
+  {
+    "name": "Recipient Management",
+    "route": null,
+    "children": [
+      {
+        "name": "Manage Recipients",
+        "route": "/recipients",
+        "children": [],
+        "icon": "ManageRecipientImg"
+      },
+      {
+        "name": "Recipient Transfer",
+        "route": "/recipients/manage-transfer",
+        "children": [],
+        "icon": "RecipientTransferImg"
+      }
+    ],
+    "icon": "RecipientNavImage"
+  },
+  {
+    "name": "Waiting List",
+    "route": null,
+    "children": [
+      {
+        "name": "Transtan Waiting List",
+        "route": "/waitinglist/transtan",
+        "children": [],
+        "icon": "TranstanWaitlistImg"
+      },
+      {
+        "name": "Common Waiting List",
+        "route": "/waitinglist/common",
+        "children": [],
+        "icon": "CommonWaitlistImg"
+      },
+      {
+        "name": "Inhouse Waiting List",
+        "route": "/waitinglist/inhouse",
+        "children": [],
+        "icon": "InhouseWaitListImg"
+      },
+      {
+        "name": "Liver Rota",
+        "route": "/liverrota",
+        "children": [],
+        "icon": "RecipientNavImage"
+      }
+    ],
+    "icon": "WaitingListNavImage"
+  },
+
+  {
+    "name": "ALF Management",
+    "route": null,
+    "children": [
+      {
+        "name": "Manage ALF",
+        "route": "/alf",
+        "children": [],
+        "icon": "ManageALFImg"
+      },
+      {
+        "name": "ALF Doctors",
+        "route": "/alf/alf-doctor",
+        "children": [],
+        "icon": "ALFDocImg"
+      }
+    ],
+    "icon": "ALFNavImage"
+  },
+  {
+    "name": "Donor Pledge Management",
+    "route": "/donor-pledge",
+    "children": [],
+    "icon": "DonarNavImage"
+  },
+  {
+    "name": "Resource Management",
+    "route": "/resource-management",
+    "children": [],
+    "icon": "ResourceNavImage"
+  },
+  {
+    "name": "Tickets",
+    "route": "/tickets",
+    "children": [],
+    "icon": "TicketNavImage"
+  },
+  {
+    "name": "Settings",
+    "route": null,
+    "children": [
+      {
+        "name": "Master Setup",
+        "route": null,
+        "children": [
+          {
+            "name": "Cause Of Death",
+            "route": "/settings/setups/cause-of-deaths",
+            "children": [],
+            "icon": "SetUpCauseofDeathIcon"
+          },
+          {
+            "name": "Termination Reason",
+            "route": "/settings/setups/termination-reasons",
+            "children": [],
+            "icon": "SetUpTerminateIcon"
+          },
+          {
+            "name": "Zone",
+            "route": "/settings/setups/zones",
+            "children": [],
+            "icon": "SetUpZoneIcon"
+          },
+          {
+            "name": "Organ",
+            "route": "/settings/setups/organs",
+            "children": [],
+            "icon": "SetUpOrganIcon"
+          },
+          {
+            "name": "Multi Organ",
+            "route": "/settings/setups/multi-organs",
+            "children": [],
+            "icon": "SetUpMultiOrganIcon"
+          },
+          {
+            "name": "Blood Group",
+            "route": "/settings/setups/blood-groups",
+            "children": [],
+            "icon": "SetUpBloodgroupIcon"
+          },
+          {
+            "name": "Department",
+            "route": "/settings/setups/departments",
+            "children": [],
+            "icon": "SetUpDepartmentIcon"
+          },
+          {
+            "name": "Designation",
+            "route": "/settings/setups/designations",
+            "children": [],
+            "icon": "SettingNavImage"
+          }
+        ],
+        "icon": "MasterSetUpIcon"
+      },
+      {
+        "name": "Access Permission",
+        "route": null,
+        "children": [
+          {
+            "name": "Roles",
+            "route": "/settings/permissions/roles",
+            "children": [],
+            "icon": "DonarNavImage"
+          }
+        ],
+        "icon": "AccessPermissionIcon"
+      }
+    ],
+    "icon": "SettingNavImage"
+  }
+]

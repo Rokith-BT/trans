@@ -1,0 +1,57 @@
+.spinner {
+  animation: spin 1s infinite linear;
+  border-color: transparent transparent #8045954d transparent;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-dots::after {
+  content: '...';
+  color: #804595;
+  animation: dots 3s infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: '   ';
+    position: absolute;
+    top: 10%;
+  }
+  33% {
+    content: '.  ';
+    position: absolute;
+    top: 10%;
+  }
+  66% {
+    content: '.. ';
+    position: absolute;
+    top: 10%;
+  }
+  100% {
+    content: '...';
+    position: absolute;
+    top: 10%;
+  }
+}
+
+/* for small loading */
+.infinite-rotate {
+  animation: spin360 0.6s linear infinite;
+}
+
+@keyframes spin360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

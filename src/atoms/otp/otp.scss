@@ -1,0 +1,10 @@
+.otp-input {
+    width: 42px !important;
+    height: 48px !important;
+    border-radius: 6px;
+    border: 1px solid var(--Black, #1A0616);
+    &:focus {
+        outline: none;
+        border: 2px solid #804595;
+    }
+}

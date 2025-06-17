@@ -1,0 +1,19 @@
+{
+  "Establishment": [
+    { "label": "1992", "value": "1992" },
+    { "label": "1993", "value": "1993" },
+    { "label": "1994", "value": "1994" },
+    { "label": "1999", "value": "1999" },
+    { "label": "2000", "value": "2000" }
+  ],
+  "zone": [
+    { "label": "North", "value": "north" },
+    { "label": "South", "value": "south" },
+    { "label": "West", "value": "west" }
+  ],
+  "HospitalType": [
+    { "label": "Government", "value": "government" },
+    { "label": "Private", "value": "private" },
+    { "label": "NTORC's", "value": "ntorc" }
+  ]
+}

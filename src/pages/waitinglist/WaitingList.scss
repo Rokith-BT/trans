@@ -1,0 +1,568 @@
+.waitilist-stat-container {
+  display: grid;
+  grid-template-columns: auto 10%;
+
+  .organ-blood-container {
+    .organ-container {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 1%;
+      .organ-image {
+        height: 30px;
+        width: 30px;
+        @media (max-width: 1200px) {
+          height: 20px;
+          width: 20px;
+          margin: 5px;
+        }
+        @media (max-width: 1024px) {
+          height: 20px;
+          width: 20px;
+          margin: 10px;
+        }
+      }
+      @media (max-width: 992px) {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 8px;
+      }
+    }
+    .stat-blood-container {
+      margin-top: 1.5%;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      align-items: center;
+      gap: 1%;
+
+      .stat-container {
+        // flex gap-[8px]
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        width: 100%;
+        column-gap: 1%;
+        .stat-button-container {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          column-gap: 8px;
+
+          .stat-button {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            font-size: 13px !important;
+            font-weight: 500 !important;
+            border-radius: 20px;
+            padding-left: 12px;
+            padding-right: 16px;
+            padding-block: 6px;
+            text-wrap: nowrap;
+            @media (max-width: 1024px) {
+              font-size: 12px !important;
+              font-weight: 500 !important;
+              border-radius: 8px;
+              padding-left: 6px;
+              padding-right: 6px;
+              padding-block: 6px;
+            }
+            @media (max-width: 1060px) {
+              .sidebar-open & {
+                font-size: 12px !important;
+                font-weight: 500 !important;
+                border-radius: 16px;
+                padding-left: 6px;
+                padding-right: 6px;
+                padding-block: 6px;
+              }
+            }
+            @media (max-width: 768px) {
+              .sidebar-open & {
+                height: 30px;
+                font-size: 11px !important;
+                font-weight: 500 !important;
+                border-radius: 8px;
+                padding-left: 6px;
+                padding-right: 6px;
+                padding-block: 6px;
+              }
+            }
+            @media (max-width: 442px) {
+              height: 20px;
+              font-size: 10px !important;
+              padding: 3px !important;
+              border-width: 1px;
+            }
+          }
+        }
+
+        .blood-container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          align-items: center;
+          column-gap: 1.5%;
+          text-wrap: nowrap;
+          // @media (max-width:442px) {
+          //   display: none;
+          //   column-gap: 4px !important;
+          // }
+          .blood-button {
+            border-radius: 20px;
+            padding-block: 6px;
+            padding-left: 8px;
+            padding-right: 16px;
+            display: flex;
+            width: 100%;
+            text-align: center;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            @media (max-width: 1024px) {
+              border-radius: 8px;
+            }
+            @media (max-width: 768px) {
+              border-radius: 8px;
+              height: 30px;
+              font-size: 11px;
+            }
+            @media (max-width: 442px) {
+              height: 30px;
+              font-size: 10px !important;
+              padding: 6px !important;
+            }
+          }
+        }
+        & .sidebar-open {
+          @media (max-width: 1544px) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 8px;
+            column-gap: 1%;
+          }
+        }
+
+        @media (max-width: 1326px) {
+          grid-template-columns: repeat(1, 1fr);
+          row-gap: 8px;
+          // column-gap: 1%;
+        }
+      }
+      .multi-organ-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: left;
+        column-gap: 10%;
+        .multi-input {
+          width: 200px;
+          @media (max-width: 442px) {
+            width: 150px;
+            font-size: 10px !important;
+            padding: 6px !important;
+          }
+        }
+        .direction-container {
+          @media (max-width: 992px) {
+            display: block !important;
+          }
+        }
+      }
+      @media (max-width: 1535px) {
+        display: grid;
+        grid-template-columns: repeat(auto, 1fr);
+        row-gap: 8px;
+        column-gap: 1%;
+      }
+      @media (max-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 8px;
+        column-gap: 1%;
+      }
+    }
+  }
+
+  .direction-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 1340px) {
+      .sidebar-open & {
+        align-items: end;
+      }
+    }
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+  @media (max-width: 1024px) {
+    column-gap: 3%;
+  }
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
+}
+.sidebar-open .waitilist-stat-container {
+  @media (max-width: 1050px) {
+    grid-template-columns: 1fr;
+  }
+}
+.sidebar-open .waitilist-stat-container .organ-blood-container .organ-container {
+  @media (max-width: 1050px) {
+    grid-template-columns: repeat(4, auto);
+    row-gap: 8px;
+  }
+}
+.sidebar-open .waitilist-stat-container .organ-blood-container .stat-blood-container {
+  @media (max-width: 1050px) {
+    grid-template-columns: repeat(1, auto);
+    row-gap: 8px;
+  }
+}
+.sidebar-open .waitilist-stat-container .direction-container {
+  @media (max-width: 1050px) {
+    display: none;
+  }
+}
+.sidebar-open .waitilist-stat-container .organ-blood-container .stat-blood-container .multi-organ-container {
+  @media (max-width: 1049px) {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: left;
+  }
+}
+.sidebar-open
+  .waitilist-stat-container
+  .organ-blood-container
+  .stat-blood-container
+  .multi-organ-container
+  .direction-container {
+  display: none;
+  @media (max-width: 1049px) {
+    display: block;
+  }
+}
+
+.waitilist-stat-container .organ-blood-container .stat-blood-container .multi-organ-container .direction-container {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+.tab-action-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 992px) {
+    .sidebar-open & {
+      margin-top: 8px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .title-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      // text-[#804595] !text-[19px] !font-[600]
+      font-size: 19px;
+      font-weight: 600;
+      color: #804595;
+      @media (max-width: 768px) {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    .filter-export {
+      display: none;
+      @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.common-waitlist-container {
+  // flex w-full items-center justify-between mb-[16px]
+  display: grid;
+  width: 100%;
+  grid-template-columns: 70% 25%;
+  justify-content: space-between;
+  .filter-inputs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2%;
+    .filter-button {
+      // text-nowrap gap-3 !bg-[#D876A94D] !border-none
+      text-wrap: nowrap;
+      background-color: #d876a94d;
+      border: none;
+      gap: 4px;
+      height: 40px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #c967a2;
+      .sidebar-open & {
+        @media (max-width: 992px) {
+          display: none;
+        }
+      }
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+    .total-button {
+      height: 40px;
+      // border-[1px] border-[#C967A2] flex items-center justify-center px-1
+      border: 1px solid #c967a2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-inline: 4px;
+      text-wrap: nowrap;
+
+      .total-text {
+        font-size: 13px !important;
+        font-weight: 500;
+      }
+      .sidebar-open & {
+        @media (max-width: 992px) {
+          display: none;
+        }
+      }
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+    .sidebar-open & {
+      @media (max-width: 992px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: 500px) {
+        display: grid;
+        row-gap: 16px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 500px) {
+      display: grid;
+      row-gap: 16px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .search-container {
+    .sidebar-open & {
+      @media (max-width: 992px) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 2%;
+      }
+    }
+    @media (max-width: 600px) {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 2%;
+    }
+    .total-button {
+      display: none;
+      .sidebar-open & {
+        @media (max-width: 992px) {
+          width: 70%;
+          border: 1px solid #c967a2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-inline: 4px;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 500px) {
+          border: none;
+          font-size: 11px !important;
+        }
+        .total-text {
+          font-size: 13px !important;
+          font-weight: 500;
+          @media (max-width: 500px) {
+            border: none;
+            font-size: 11px !important;
+          }
+        }
+      }
+      @media (max-width: 600px) {
+        width: 100%;
+        border: 1px solid #c967a2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 4px;
+        text-wrap: nowrap;
+
+        .total-text {
+          font-size: 10px !important;
+          font-weight: 500;
+          @media (max-width: 500px) {
+            font-size: 11px !important;
+          }
+        }
+      }
+      @media (max-width: 500px) {
+        height: 35px;
+        width: 50%;
+        border: none;
+        border-radius: 4px;
+        padding-inline: 0px;
+      }
+    }
+    .filter-button {
+      display: none;
+      .sidebar-open & {
+        @media (max-width: 992px) {
+          display: flex;
+          width: 100%;
+          text-wrap: nowrap;
+          background-color: #d876a94d;
+          border: none;
+          gap: 4px;
+          height: 40px;
+          font-size: 13px;
+          font-weight: 400;
+          color: #c967a2;
+        }
+        @media (max-width: 500px) {
+          height: 30px !important;
+          text-align: balance;
+        }
+      }
+      @media (max-width: 600px) {
+        display: flex;
+        width: 100%;
+        text-wrap: nowrap;
+        background-color: #d876a94d;
+        border: none;
+        gap: 4px;
+        height: 40px;
+        font-size: 10px;
+        font-weight: 400;
+        color: #c967a2;
+      }
+      @media (max-width: 500px) {
+        width: 50%;
+        height: 35px !important;
+        border-radius: 0px;
+        text-align: balance;
+      }
+    }
+    .search-button {
+      // !rounded-none w-[100%] h-[36px] !border-[1px] !text-[13px] !border-[#A1999F66]
+      border-radius: none;
+      width: 100%;
+      height: 36px;
+      border: 1px solid #a1999f66;
+      font-size: 13px;
+      @media (max-width: 600px) {
+        font-size: 10px;
+      }
+      @media (max-width: 500px) {
+        height: 30px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.common-waitlist-title-page {
+  // flex items-center justify-between mb-[16px]
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  .sidebar-open & {
+    @media (max-width: 950px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+.inhouse-waitlist-container {
+  // flex items-center justify-between mb-[30px]
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  .inhouse-title {
+    // text-[#804595] !text-[19px] !font-[600]
+    color: #804595;
+    font-size: 19px;
+    font-weight: 600;
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
+  }
+  .inhouse-approval-button {
+    // flex gap-2 items-center md:text-nowrap
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    @media (max-width: 992px) {
+      font-size: 13px;
+      background-color: #c967a2;
+    }
+    @media (max-width: 600px) {
+      font-size: 12px;
+    }
+  }
+}
+.inhouse-tab-page-filter-container {
+  // mt-[25px] flex items-cente justify-between !z-[10]
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+
+  .sidebar-open & {
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

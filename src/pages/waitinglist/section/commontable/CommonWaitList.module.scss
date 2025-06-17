@@ -1,0 +1,36 @@
+.common-waitlist-card {
+  border: 1px solid #c967a2;
+  padding: 12px;
+  border-radius: 8px;
+
+  .common-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .sno {
+      color: #a1999f;
+      font-size: 10px;
+      font-weight: 500;
+    }
+    .direction {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+  .gender-age-blood {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 4px;
+    gap: 4px;
+    .label {
+      color: #a1999f;
+      font-size: 10px;
+      font-weight: 500;
+      .value {
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+}

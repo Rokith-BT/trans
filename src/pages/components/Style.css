@@ -1,0 +1,64 @@
+@keyframes fillAnimation {
+  0% {
+    background-color: transparent;
+    transform: scaleY(1);
+  }
+  50% {
+    background-color: #C967A226; 
+    transform: scaleY(1);
+  }
+  100% {
+    background-color: transparent;
+    transform: scaleY(1);
+  }
+}
+
+.fill-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.fill-animation::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(201, 103, 162, 0.2); 
+  transform: translateX(-50%) scaleY(1);
+  transition: transform 0.3s ease;
+  animation: fillAnimation 0.6s forwards;
+}
+/* for box styles */
+.water-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(  
+    circle at var(--x) var(--y),
+    rgba(201, 103, 162, 0.3) 0%,
+    rgba(201, 103, 162, 0.2) 30%,
+    rgba(201, 103, 162, 0.1) 60%,
+    transparent 100%
+  );
+  animation: waveFill 0.8s linear forwards;
+  clip-path: circle(0% at var(--x) var(--y));
+  pointer-events: none;
+}
+
+@keyframes waveFill {
+  0% {
+    clip-path: circle(0% at var(--x) var(--y));
+  }
+  50% {
+    clip-path: circle(50% at var(--x) var(--y));
+    opacity: 1;
+  }
+  100% {
+    clip-path: circle(100% at var(--x) var(--y));
+    opacity: 1;
+  }
+}

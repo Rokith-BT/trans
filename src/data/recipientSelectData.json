@@ -1,0 +1,18 @@
+{
+  "consultantName": [
+    { "label": "consultant 1", "value": "maha1" },
+    { "label": "consultant 2", "value": "maha2" },
+    { "label": "consultant 3", "value": "maha3" },
+    { "label": "consultant 4", "value": "maha4" },
+    { "label": "consultant 5", "value": "maha5" }
+  ],
+  "cmInsurance": [
+    { "label": "Yes", "value": "yes", "show": true },
+    { "label": "No", "value": "no", "show": false }
+  ],
+  "threeRadioOption": [
+    { "label": "Current", "value": "current" },
+    { "label": "Healed", "value": "healed" },
+    { "label": "No History", "value": "nohistory" }
+  ]
+}

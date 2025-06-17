@@ -1,0 +1,20 @@
+.preview-footer-button {
+  // mt-[60px] mb-[10%] flex flex-col lg:flex-row gap-[22px] justify-end
+  margin-top: 60px;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: end;
+  justify-content: end;
+  column-gap: 2%;
+  row-gap: 5%;
+
+  @media (max-width: 1054px) {
+    grid-template-columns: repeat(3, auto);
+    row-gap: 10%;
+  }
+  @media (max-width: 885px) {
+    grid-template-columns: repeat(2, auto);
+    row-gap: 10%;
+  }
+}

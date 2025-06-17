@@ -1,0 +1,320 @@
+// .grid-container {
+//   display: grid;
+//   gap: 16px;
+//   align-items: stretch;
+
+//   // 6 columns on large screens: 4 for summary, 1 for direction, 1 for button
+//   grid-template-columns: repeat(6, 1fr);
+
+//   // Medium screens: reduce columns
+//   @media (max-width: 1024px) {
+//     grid-template-columns: repeat(4, 1fr);
+//   }
+
+//   // Small screens: wrap into 2 or 1 column layout
+//   @media (max-width: 768px) {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+
+//   @media (max-width: 480px) {
+//     grid-template-columns: 1fr;
+//   }
+
+//   // Make buttons/direction box span the last column on large screens
+//   .direction-box {
+//     grid-column: span 1;
+//   }
+
+//   .button-box {
+//     grid-column: span 1;
+//   }
+// }
+.top-bar-grid {
+  display: grid;
+  gap: 16px;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr); // 4 for summary boxes, 1 direction, 1 button
+  grid-auto-rows: auto;
+
+  // Summary boxes take first 4 slots
+  .grid-container {
+    display: contents; // allows its children to flow directly into parent grid
+  }
+
+  .grid-container > *:nth-child(1) {
+    grid-column: span 1;
+  }
+  .grid-container > *:nth-child(2) {
+    grid-column: span 1;
+  }
+  .grid-container > *:nth-child(3) {
+    grid-column: span 1;
+  }
+  .grid-container > *:nth-child(4) {
+    grid-column: span 1;
+  }
+
+  .direction-box {
+    grid-column: span 1;
+    display: flex;
+  }
+
+  // .button-box {
+  //   grid-column: span 1;
+
+  // }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    // Make all summary boxes wrap naturally
+    .grid-container {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-column: span 1;
+    }
+
+    .direction-box {
+      grid-column: span 1;
+      justify-self: center;
+      margin-top: 8px;
+    }
+
+    .button-box {
+      display: none; // hide buttons on small screens
+    }
+  }
+  @media (max-width: 992px) {
+    grid-template-columns: 3fr 1fr;
+
+    // Make all summary boxes wrap naturally
+    .grid-container {
+      display: grid;
+      gap: 10px;
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column: span 1;
+      margin: 0 0;
+    }
+
+    .direction-box {
+      grid-column: span 1;
+      justify-self: center;
+      margin-top: 8px;
+      width: 100%;
+    }
+
+    .button-box {
+      display: none; // hide buttons on small screens
+    }
+  }
+  // @media (max-width: 1024px) {
+  //   grid-template-columns: repeat(2, 1fr);
+
+  //   // Make all summary boxes wrap naturally
+  //   .grid-container {
+  //     display: grid;
+  //     gap: 16px;
+  //     grid-template-columns: repeat(5, 1fr);
+  //     grid-column: span 1;
+  //   }
+
+  //   .direction-box {
+  //     grid-column: span 1;
+  //     justify-self: center;
+  //     margin-top: 8px;
+  //   }
+
+  //   .button-box {
+  //     display: none; // hide buttons on small screens
+  //   }
+  // }
+}
+.sidebar-open .top-bar-grid {
+  @media (max-width: 1290px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    // Make all summary boxes wrap naturally
+    .grid-container {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-column: span 1;
+    }
+
+    .direction-box {
+      grid-column: span 1;
+      justify-self: center;
+      margin-top: 8px;
+    }
+
+    .button-box {
+      display: none; // hide buttons on small screens
+    }
+  }
+  @media (max-width: 1144px) {
+    grid-template-columns: 3fr 1fr;
+
+    // Make all summary boxes wrap naturally
+    .grid-container {
+      display: grid;
+      gap: 10px;
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column: span 1;
+      margin: 0 0;
+    }
+
+    .direction-box {
+      grid-column: span 1;
+      justify-self: center;
+      margin-top: 8px;
+      width: 100%;
+    }
+
+    .button-box {
+      display: none; // hide buttons on small screens
+    }
+  }
+}
+
+.last-bar-grid {
+  padding: 16px 0;
+  width: 100%;
+
+  .grid-container {
+    display: grid;
+    gap: 1%;
+    grid-template-columns: auto auto; // Two columns: one for status, one for organ
+    width: 100%;
+    .status-grid,
+    .organ-grid {
+      display: grid;
+      gap: 2%;
+    }
+
+    .status-grid {
+      width: 100%;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .organ-grid {
+      width: 100%;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      row-gap: 8px;
+
+      .status-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .organ-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  }
+
+  // @media (max-width: 1024px) {
+  //   .grid-container {
+  //     grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  //   }
+  // }
+  @media (max-width: 600px) {
+    padding: 8px 0;
+  }
+}
+.sidebar-open .last-bar-grid .grid-container {
+  grid-template-columns: auto auto; // Two columns for status and organ
+
+  @media (max-width: 1294px) {
+    row-gap: 8px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+// .add-button-block {
+//   display: none;
+// }
+.sidebar-open .add-button-block {
+  display: none;
+  @media (max-width: 1290px) {
+    display: block;
+  }
+}
+.add-button-block {
+  display: none;
+  @media (max-width: 1023px) {
+    display: block;
+  }
+  .search-field {
+    // !rounded-[4px]  !h-[32px] bg-transparent !outline-[1px] !outline-[#D876A9]
+    @media (max-width: 600px) {
+      height: 25px !important;
+    }
+  }
+  .export-button {
+    // !rounded-[4px]  !h-[32px] bg-transparent !outline-[1px] !outline-[#D876A9]
+    height: 32px;
+    @media (max-width: 600px) {
+      height: 30px !important;
+    }
+  }
+  .add-button {
+    // !rounded-[4px]  !h-[32px] bg-transparent !outline-[1px] !outline-[#D876A9]
+    height: 32px;
+    @media (max-width: 600px) {
+      height: 30px !important;
+    }
+  }
+}
+.hospital-list-search {
+  height: 36px;
+  width: 276px;
+  border-radius: 20px;
+
+  .sidebar-open & {
+    @media (max-width: 1290px) {
+      display: none;
+    }
+  }
+}
+
+.tab-pagination-block {
+  // flex flex-col lg:flex-row items-start lg:items-center justify-between mt-2
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .sidebar-open & {
+    margin-top: 0px;
+    @media (max-width: 1400px) {
+      margin-top: 0px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @media (max-width: 1290px) {
+      flex-direction: row;
+      align-items: center;
+    }
+    @media (max-width: 1024px) {
+      margin-top: 8px;
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @media (min-width: 888px) and (max-width: 1023px) {
+    flex-direction: row;
+    align-items: center;
+  }
+  @media (max-width: 992px) {
+    margin-top: 8px;
+  }
+}

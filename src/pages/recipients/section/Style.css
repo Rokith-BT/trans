@@ -1,0 +1,67 @@
+.ag-root-wrapper {
+  overflow: visible !important;
+}
+
+.ag-popup {
+  z-index: 1000 !important; /* Ensure popups render above the grid */
+}
+
+.action-icon {
+  animation: 0.3s fade forwards;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+    width: auto;
+  }
+  25% {
+    opacity: 0.3;
+    transform: translateX(-30px);
+   
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-30px);
+    width: 70px;
+  }
+  75% {
+    opacity: 0.7;
+    transform: translateX(-30px);
+    width: 105px;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-30px);
+    width: auto;
+  }
+}
+
+.actionOpenIcon {
+  animation: 1s rotateXOpen forwards;
+}
+@keyframes rotateXOpen {
+  0% {
+    transform: rotateY(90deg); /* Start from rotated position */
+  }
+  100% {
+    transform: rotateY(0deg); /* End at normal position */
+  }
+}
+.actionCloseIcon {
+  animation: 3s rotateXClose forwards;
+}
+@keyframes rotateXClose {
+  0% {
+    transform: rotateY(40deg); /* Start from rotated position */
+  }
+  50% {
+    transform: rotateY(40deg); /* End at normal position */
+  }
+  50% {
+    transform: rotateY(40deg); /* End at normal position */
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}

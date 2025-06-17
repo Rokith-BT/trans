@@ -1,0 +1,207 @@
+// this file is used to style all over forms file in hospital module
+.add-doctor-container {
+  // mt={3} px={5}
+  margin-top: 28px;
+  padding-inline: 40px;
+  @media (max-width: 992px) {
+    margin-top: 19px;
+    padding-inline: 30px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 10px;
+    padding-inline: 20px;
+  }
+}
+.profile-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 57px;
+  row-gap: 28px;
+  padding-bottom: 28px;
+
+  .nation-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 28px;
+    column-gap: 57px;
+    margin-inline: -18px;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.sidebar-open .profile-section {
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.sidebar-open .nation-section {
+  @media (max-width: 883px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.details-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 57px;
+  row-gap: 28px;
+  margin-inline: -18px;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.sidebar-open .details-section {
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 883px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.details-section .multiple-select {
+  padding-block: 2%;
+  overflow-x: auto !important;
+}
+
+.organ-input {
+  margin-inline: -18px;
+  padding-block: 28px;
+}
+.address-section {
+  // margin-inline: -18px;
+  .address-title {
+    // !text-[#804595] !text-[19px] !font-[600] !mb-7
+    margin-inline: -18px;
+    color: #804595;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+}
+.exp-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 57px;
+  row-gap: 28px;
+  margin-inline: -18px;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.sidebar-open .exp-section {
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 883px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.exp-title {
+  // mt-[28px] flex justify-between
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px !important;
+  margin-inline: -18px !important;
+}
+.hospital-form-sub-title {
+  // text-[#804595] !font-[700] !text-[19px] !my-[28px]
+  color: #804595;
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  margin-top: 28px !important;
+  margin-bottom: 16px !important;
+  margin-inline: -18px !important;
+
+  @media (max-width: 768px) {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-top: 14px !important;
+    margin-bottom: 8px !important;
+    margin-inline: -18px !important;
+  }
+}
+//for footer buttons
+.hospital-footer-section {
+  // mt-[60px]
+  margin-top: 60px;
+  .buttons-width {
+    width: 150px !important;
+
+    @media (max-width: 768px) {
+      width: 75px !important;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    margin-inline: -18px;
+  }
+}
+
+// approved organ page
+.approved-organ-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  @media (max-width: 1500px) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  @media (max-width: 1325px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 846px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 648px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 508px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.sidebar-open .approved-organ-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  column-gap: 1%;
+  @media (min-width: 1630px) {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  @media (min-width: 1500px) and (max-width: 1630px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  @media (max-width: 1500px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @media (max-width: 1325px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 648px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 508px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
