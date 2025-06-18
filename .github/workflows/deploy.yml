@@ -2,19 +2,13 @@ name: Deploy React App to IIS (Self-hosted)
 
 on:
   push:
-    branches:
-      - main
+    # branches:
+    #   - main
 
 jobs:
   build-and-deploy:
     runs-on: [self-hosted, windows, test]
-
-    # env:
-    #   REACT_APP_API_URL: ${{ secrets.VITE_API_ENDPOINT }}
-    #   REACT_APP_ENV: local
-
-
-    
+  
 
     steps:
       - name: Checkout Code
@@ -30,19 +24,13 @@ jobs:
           REACT_APP_API_URL: ${{ secrets.VITE_API_ENDPOINT }}
           REACT_APP_OTHER: local
 
-
-
       - name: Install Dependencies
         run: npm ci
-
-
-
 
       - name: Build React App
         run: npm run build
 
       - name: Clean IIS Directory
-        # run: Remove-Item -Recurse -Force "C:\inetpub\wwwroot\webapp\*"
         run: |
           $path = "C:\inetpub\wwwroot\webapp"
           Get-ChildItem -Path $path -Exclude "web.config" -Recurse | Remove-Item -Force -Recurse
