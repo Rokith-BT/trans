@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textView"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:text="Search Patient details"
+            android:textAppearance="@style/patient_info" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="@dimen/size_500dp"
+        android:layout_height="@dimen/size_500dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edtPatientId"
+            style="@style/inputEditText"
+            android:layout_height="@dimen/size_45dp"
+            android:layout_marginTop="@dimen/size_6dp"
+            android:fontFamily="@font/mulish_normal"
+            android:maxLines="1"
+            android:inputType="textCapSentences"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_150dp"
+                android:scrollbars="vertical"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/appointment_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/appbarColor"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/lyt_no_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/size_150dp"
+                    android:layout_height="@dimen/size_150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/no_record" />
+
+                <TextView
+                    style="@style/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/no_record"
+                    android:text="No Patient Found" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_new"
+                style="@style/DefaultButton"
+                android:layout_margin="@dimen/size_10dp"
+                android:layout_marginTop="@dimen/size_40dp"
+                android:background="@drawable/rounded_rectangle_blue_outline"
+                android:text="Add New Patient"
+                android:textAllCaps="false"
+                android:textColor="@color/blue_text"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

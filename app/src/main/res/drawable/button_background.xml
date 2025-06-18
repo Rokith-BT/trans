@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" /> <!-- Background color -->
+        </shape>
+    </item>
+    <item android:bottom="6dp" android:left="@dimen/size_28dp" android:right="@dimen/size_28dp" android:top="6dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/appbarColor" /> <!-- Text background color -->
+            <corners android:radius="30dp" /> <!-- Rounded corners -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_rectangle_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textView"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:text="@string/link_abha"
+            android:visibility="gone"
+            android:textAppearance="@style/patient_info" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="455dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/aadherexit"
+                android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABHA  details not exist on the given\n AADHAAR number"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textColor="#1C2253"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/appbarColor"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_verify"
+                style="@style/DefaultButton"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:visibility="gone"
+                android:text="Create ABHA"
+                android:textAllCaps="false" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

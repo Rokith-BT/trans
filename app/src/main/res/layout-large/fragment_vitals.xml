@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.AppointmentFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/vibarasenseRtl"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/size_20dp"
+        android:background="#F0F3FF">
+
+        <ImageView
+            android:id="@+id/imgVibrasense"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/vibrasense_device" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imgVibrasense"
+            android:gravity="center"
+            android:text="Vibrasense"
+            android:textColor="@color/menuTxtColor"
+            android:textSize="@dimen/size_text_14sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/omronRtl"
+        android:layout_toRightOf="@+id/vibarasenseRtl"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/size_20dp"
+        android:background="#F0F3FF">
+
+        <ImageView
+            android:id="@+id/imgOmron"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/omron_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imgOmron"
+            android:gravity="center"
+            android:text="Omron"
+            android:textColor="@color/menuTxtColor"
+            android:textSize="@dimen/size_text_14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/txtEcg"
+        android:layout_toRightOf="@+id/omronRtl"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/size_20dp"
+        android:background="#F0F3FF">
+
+        <ImageView
+            android:id="@+id/imgEcg"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sawbone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imgEcg"
+            android:gravity="center"
+            android:text="sawbone"
+            android:textColor="@color/menuTxtColor"
+            android:textSize="@dimen/size_text_14sp" />
+    </RelativeLayout>
+</RelativeLayout>

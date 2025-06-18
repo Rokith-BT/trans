@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="190dp"
+    android:background="@drawable/rounded_rectangle_light_blue"
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/size_20dp">
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:gravity="center_vertical"
+        android:text="@string/profile"
+        android:textAppearance="@style/profile" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/size_10dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="@dimen/size_60dp"
+            android:layout_height="@dimen/size_60dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user_profile" />
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgPhoto"
+            android:gravity="center_vertical"
+            android:text="@string/name"
+            android:textAppearance="@style/name" />
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtName"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgPhoto"
+            android:gravity="center_vertical"
+            android:text="@string/email_ex"
+            android:textAppearance="@style/email_ex" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLogout"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#F7F8F9">
+
+        <ImageView
+            android:id="@+id/imgLogout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_logout" />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgLogout"
+            android:gravity="center_vertical"
+            android:text="@string/logout"
+            android:textAppearance="@style/logout" />
+
+    </RelativeLayout>
+</LinearLayout>

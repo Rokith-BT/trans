@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/size_20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/patient_inf"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:text="@string/patient_info"
+            android:textAppearance="@style/patient_info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/patient_id"
+                android:textAppearance="@style/enter_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/name"
+                android:textAppearance="@style/enter_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/gender"
+                android:textAppearance="@style/enter_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtPatientId"
+                style="@style/editText"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:hint="@string/patient_id"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/editText"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:hint="@string/name"
+                android:enabled="false"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/edtGender"
+                style="@style/editText"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:hint="@string/gender"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/age"
+                android:enabled="false"
+                android:textAppearance="@style/enter_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/blood_group"
+                android:enabled="false"
+                android:textAppearance="@style/enter_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/phone"
+                android:enabled="false"
+                android:textAppearance="@style/enter_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtAge"
+                style="@style/editText"
+                android:layout_weight="1"
+                android:hint="@string/age"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtBloodGroup"
+                style="@style/editText"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:hint="@string/blood_group"
+                android:enabled="false"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                style="@style/editText"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:hint="@string/phone"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/email"
+                android:textAppearance="@style/enter_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/doctor"
+                android:textAppearance="@style/enter_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/dateSlot"
+                android:textAppearance="@style/enter_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/editText"
+                android:layout_weight="1"
+                android:hint="@string/email"
+                android:enabled="false"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/spinDoctor"
+                    style="@style/editText"
+                    android:background="@drawable/rounded_rectangle_gray_outline" />
+
+                <View
+                    android:layout_width="@dimen/size_40dp"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/chevron_down" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edtDate"
+                style="@style/editText"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:imeOptions="actionDone"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/abha_no"
+            android:textAppearance="@style/enter_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtAbhaNo"
+                style="@style/editText"
+                android:layout_weight="1"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="17" />
+
+            <Button
+                android:id="@+id/btnCreateAbhaNo"
+                style="@style/DefaultButton"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_rectangle_blue_outline"
+                android:text="@string/create_abha"
+                android:textAllCaps="false"
+                android:textColor="@color/appbarColor" />
+
+            <View
+                style="@style/editText"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/DefaultButton"
+            android:layout_marginTop="@dimen/size_40dp"
+            android:background="@drawable/rounded_rectangle_blue"
+            android:text="@string/next"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+</ScrollView>

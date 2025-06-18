@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.AppointmentFragment">
+
+    <RelativeLayout
+        android:id="@+id/relMain"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/size_20dp"
+        android:background="@color/bg">
+
+        <RelativeLayout
+            android:id="@+id/relTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/mainTabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                app:tabIndicatorColor="@color/appbarColor"
+                app:tabSelectedTextColor="@color/appbarColor"
+                app:tabTextAppearance="@style/logout"
+                app:tabTextColor="@color/black">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/mulish_normal"
+                    android:text="@string/pendingBill" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:fontFamily="@font/mulish_normal"
+                    android:text="@string/billingHistory" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_45dp"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_45dp"
+                    android:padding="@dimen/size_10dp"
+                    android:layout_marginEnd="@dimen/size_10dp"
+                    android:background="@drawable/rounded_rectangle_blue_outline"
+                    android:gravity="center"
+                    android:textAppearance="@style/logout"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_45dp"
+                    android:background="@drawable/rounded_rectangle_blue_outline"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/changeAblePendingRevenue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_45dp"
+                        android:gravity="center"
+                        android:text="@string/totalRevenue"
+                        android:padding="@dimen/size_10dp"
+                        android:textAppearance="@style/patient_info" />
+
+                    <TextView
+                        android:id="@+id/txtTotRevenue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_45dp"
+                        android:layout_marginStart="@dimen/size_6dp"
+                        android:background="@drawable/rounded_rectangle_blue"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textAppearance="@style/logout"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_45dp"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:background="@drawable/rounded_rectangle_blue_outline"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_45dp"
+                        android:padding="@dimen/size_10dp"
+                        android:gravity="center"
+                        android:text="@string/totalcount"
+                        android:textAppearance="@style/patient_info" />
+
+                    <TextView
+                        android:id="@+id/txtCompleted"
+                        android:layout_width="60dp"
+                        android:layout_height="@dimen/size_45dp"
+                        android:layout_marginStart="@dimen/size_6dp"
+                        android:background="@drawable/rounded_rectangle_blue"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:textAppearance="@style/logout"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgFilter"
+                    android:layout_width="@dimen/button_height"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:layout_marginEnd="@dimen/size_10dp"
+                    android:background="@drawable/filter" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relTabLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearHeading"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginTop="@dimen/size_20dp"
+                android:background="@drawable/table_title_bg">
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/slNo" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/patient_name" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/patient_id" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/transaction_id" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/paymentDate" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/amount" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/paymentMethod" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/invoice" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearPendBillsHeading"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:background="@drawable/table_title_bg"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/slNo" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/patient_name" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/patient_id" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/email" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/mobile" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/amountToPay" />
+
+                <TextView
+                    style="@style/tblHead_white"
+                    android:text="@string/action" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relPages"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/rows_per_page"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_40dp"
+                android:gravity="center_vertical"
+                android:text="@string/rows_per_page"
+                android:textAppearance="@style/morning" />
+
+            <Spinner
+                android:id="@+id/spinPages"
+                style="@style/appointment"
+                android:layout_width="@dimen/size_64dp"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_toEndOf="@+id/rows_per_page"
+                android:background="@drawable/rounded_rectangle_blue_outline" />
+
+            <View
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size_50dp"
+                android:layout_toEndOf="@+id/rows_per_page"
+                android:background="@drawable/chevron_down_blue" />
+
+            <ImageView
+                android:id="@+id/imgPrev"
+                android:layout_width="@dimen/size_28dp"
+                android:layout_height="@dimen/size_28dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toStartOf="@+id/tblPages"
+                android:src="@drawable/chevron_left" />
+
+            <TableLayout
+                android:id="@+id/tblPages"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/txtEtc" />
+
+            <TextView
+                android:id="@+id/txtEtc"
+                android:layout_width="@dimen/size_28dp"
+                android:layout_height="@dimen/size_28dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/txtLastPage"
+                android:enabled="false"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center"
+                android:text="of"
+                android:textColor="@color/menuTxtColor" />
+
+            <TextView
+                android:id="@+id/txtLastPage"
+                android:layout_width="@dimen/size_28dp"
+                android:layout_height="@dimen/size_28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:layout_marginEnd="@dimen/size_10dp"
+                android:layout_toStartOf="@+id/imgNext"
+                android:background="@drawable/light_blue_circle_bg"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center"
+                android:textColor="@color/menuTxtColor" />
+
+            <ImageView
+                android:id="@+id/imgNext"
+                android:layout_width="@dimen/size_28dp"
+                android:layout_height="@dimen/size_28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/size_10dp"
+                android:src="@drawable/chevron_right" />
+
+
+            <TextView
+                android:id="@+id/txtResults"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/size_16dp"
+                android:layout_toStartOf="@+id/imgPrev"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/abha_health" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relPages"
+            android:layout_below="@+id/linearHead"
+            android:layout_marginBottom="@dimen/size_20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:id="@+id/tblBilling"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/table_bg" />
+
+                <ImageView
+                    android:id="@+id/imgNoData"
+                    android:layout_width="270dp"
+                    android:layout_height="260dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/size_100dp"
+                    android:background="@drawable/no_data"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtNoData"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_below="@+id/imgNoData"
+                    android:gravity="center"
+                    android:text="@string/noRecFound"
+                    android:textAppearance="@style/doctorName"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</FrameLayout>

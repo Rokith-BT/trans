@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_rectangle_light_blue"
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/size_20dp"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/allTxt"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:text="@string/all"
+        android:textStyle="bold"
+        android:textAppearance="@style/profile" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#737791"/>
+    <TextView
+        android:id="@+id/opText"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:gravity="center"
+        android:text="@string/ops"
+        android:textStyle="bold"
+        android:textAppearance="@style/profile" />
+    <View
+        android:layout_marginTop="@dimen/size_6dp"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#737791"/>
+    <TextView
+        android:id="@+id/apptsTxt"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:gravity="center"
+        android:text="@string/appts"
+        android:textAppearance="@style/profile" />
+
+
+</LinearLayout>

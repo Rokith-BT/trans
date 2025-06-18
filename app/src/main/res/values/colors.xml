@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bg">#FCFCFC</color>
+    <color name="textpopup">#666070FF</color>
+    <color name="forgotPwdColor">#2563EB</color>
+    <color name="appbarColor">#6070FF</color>
+    <color name="menuTxtColor">#1C2253</color>
+    <color name="fhirColor">#3C4595</color>
+    <color name="vitaltbl_text">#333333</color>
+    <color name="loginBg">#F0F3FF</color>
+    <color name="menu_sel">#92A4FF</color>
+    <color name="view_color">#737791</color>
+    <color name="lavender">#8692F7</color>
+    <color name="upload_photo_title">#8F98B3</color>
+    <color name="gray">#B1B4C9</color>
+    <color name="viewLineColor">#BDC0D4</color>
+    <color name="tbl_title_color">#8D98FF</color>
+    <color name="red_text">#FE3232</color>
+    <color name="green_text">#0EAD69</color>
+    <color name="yellow_text">#FFCE20</color>
+    <color name="orange_text">#FF8D4D</color>
+    <color name="blue_text">#6070FF</color>
+    <color name="pending_bg">#FFF6D6</color>
+    <color name="completed_bg">#FADBDB</color>
+    <color name="requested_bg">#FF985F</color>
+    <color name="ongoing_bg">#8D98FF</color>
+    <color name="cancelled_bg">#FF4C47</color>
+    <color name="approved_bg">#33DE7C</color>
+    <color name="inprogress_bg">#6070FF</color>
+    <color name="reserved_bg">#FFCB44</color>
+    <color name="doc_sel_line_color">#EAEAEA</color>
+    <color name="status_line">#A1AEBE</color>
+    <color name="status_done">#33DE7C</color>
+    <color name="tbl_bg">#0026C8BE</color>
+    <color name="billing_text">#333333</color>
+    <color name="plenome_text">#3A639C</color>
+    <color name="abha_bg">#F9FAFB</color>
+    <color name="connected">#36FE32</color>
+    <color name="today_border_horizontal">#e4e4e4</color>
+    <color name="today_background_horizontal">#85f7f7f7</color>
+    <color name="colorPrimary_horizontal">#37474f</color>
+    <color name="secundaryTextColor_horizontal">#757575</color>
+    <color name="primaryTextColor_horizontal">#4d4d4d</color>
+    <color name="colorHover_horizontal">#30818181</color>
+    <color name="colortab">#3C4595</color>
+    <color name="preview_tbl_head_bg">#B8BFFF</color>
+    <color name="comp_text_color">#4E54C8</color>
+    <color name="dark_purple">#1A1C43</color>
+    <color name="secondary_dark_grey">#666666</color>
+    <color name="dark_black">#01030F</color>
+
+
+</resources>

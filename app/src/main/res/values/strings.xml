@@ -1,0 +1,525 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Plenome POS</string>
+    <string name="welcome">Welcome!</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_pwd">Enter password</string>
+    <string name="email">Email id</string>
+    <string name="date">Date</string>
+    <string name="aadhaar_no">AADHAAR Number</string>
+    <string name="aadhaar_otp">AADHAAR OTP</string>
+    <string name="abha_otp">ABHA OTP</string>
+    <string name="aadhaar_hint">0000 0000 0000</string>
+    <string name="abha_hint">00-0000-0000-0000</string>
+    <string name="pwd">Password</string>
+    <string name="signin">Sign in</string>
+    <string name="verified">Verified</string>
+    <string name="generate_prescription">Generate Prescription</string>
+    <string name="getOtp">Get otp</string>
+    <string name="search">Search</string>
+    <string name="name">Name</string>
+    <string name="full_name">Full Name</string>
+    <string name="slNo">S. No</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="speciality">Speciality</string>
+    <string name="token_no">Token Number</string>
+    <string name="forgotPwd">Forgot Password?</string>
+    <string name="rememberPwd">Remember me</string>
+    <string name="plenome">Plenome</string>
+    <string name="state">State</string>
+    <string name="pincode">Pincode</string>
+    <string name="mountHospital">Mount Multispeciality Hospitals</string>
+    <string name="plenome_hospitals">Plenome Hospitals</string>
+    <string name="welcome_name">Welcome, name</string>
+    <string name="good_morning">Good Morning!</string>
+    <string name="appointmentBook">Book Appointment</string>
+    <string name="trackDetails">Tracking Details</string>
+    <string name="trackStatus">Status Tracking</string>
+    <string name="add_patient">Add new patient</string>
+    <string name="abha">ABHA</string>
+    <string name="suggested">Suggested</string>
+    <string name="abha_address">ABHA Address</string>
+    <string name="abha_address_new">ABHA Address : </string>
+    <string name="abha_verified">ABHA address verified successfully</string>
+    <string name="abha_no_linked">ABHA number linked successfully</string>
+    <string name="plus_new">+ New</string>
+    <string name="vitals">Vitals</string>
+    <string name="create_abha">Create ABHA</string>
+    <string name="emr">EMR</string>
+    <string name="temp">Temperature</string>
+
+    <string name="billing">Billing</string>
+    <string name="billingHistory">Billing History</string>
+    <string name="pendingBill">Pending Bills</string>
+    <string name="password_reset">Password reset</string>
+    <string name="change_pwd">Change Password</string>
+    <string name="new_pwd">Enter New Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="consultant">Consultant</string>
+    <string name="req_on">Requested on</string>
+    <string name="granted_on">Granted on</string>
+    <string name="expire_on">Expire on</string>
+    <string name="enter_your_email_address">Enter your email address that associated with this account</string>
+    <string name="next">Next</string>
+    <string name="confirmSlot">Confirm Slot</string>
+    <string name="update">Update</string>
+    <string name="mailSent">Your credentials has sent to your email. Please check </string>
+    <string name="pwd_changed_success">Password Changed Successfully</string>
+
+    <string name="select_user">Select User Type</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_abha_addr">Select ABHA Address</string>
+    <string name="comm_info">Communication info</string>
+    <string name="select_otp_option">Select an Option to receive OTP</string>
+    <string name="scanning_for">Scanning for Device...</string>
+    <string name="connecting">Connecting..</string>
+    <string name="connected">Connected</string>
+<!--    <string name="sel_string">We found that your mobile number already linked with ABHA address. Select from below which you want to continue</string>-->
+    <string name="sel_string">Select existing ABHA address to continue or Create new ABHA address</string>
+    <string name="select_doctor">Select Doctor</string>
+    <string name="doctor">Doctor</string>
+    <string name="edit">Edit</string>
+    <string name="txt_history">History</string>
+    <string name="noDataFound">Looks like user do not have any records</string>
+    <string name="changeStatus">Change the status</string>
+    <string name="noRecFound">No records found</string>
+    <string name="noSlot">No slots available!</string>
+    <string name="approveConfirm">Are you sure want to Approve?</string>
+    <string name="inProcessConfirm">Are you sure want to mark as In process?</string>
+    <string name="completedConfirm">Are you sure want to mark as completed?</string>
+    <string name="insuranceNo">Insurance Number</string>
+    <string name="insuranceValidity">Insurance validity</string>
+    <string name="discountRate">Discount rate</string>
+    <string name="discountPercent">Discount Percentage</string>
+    <string name="primaryNo">Primary Number</string>
+    <string name="primaryNoMan">Primary Number<font color='#FE3232'>*</font></string>
+    <string name="permenantAddress">Permanent Address</string>
+    <string name="permenantAddressMan">Permanent Address</string>
+    <string name="communicationAddress">Communication Address</string>
+    <string name="emergencyNo">Emergency Number</string>
+    <string name="requested">Requested</string>
+    <string name="reserved">Reserved</string>
+    <string name="approved">Approved</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="payment">Payment</string>
+    <string name="consult_doctor">Consult Doctor</string>
+    <string name="nurse">Nurse</string>
+    <string name="receptionist">Receptionist</string>
+    <string name="login_as_user">Login as User role Name</string>
+    <string name="password_det">Password must contain 8 characters Example \u00e2\u0080\u009cA@12asmn</string>
+    <string name="appointment">Appointments</string>
+    <string name="appointmentNo">Appointment No</string>
+    <string name="paymentDate">Payment Date</string>
+    <string name="subTotal">Sub Total</string>
+    <string name="CGST">CGST</string>
+    <string name="SGST">SGST</string>
+    <string name="appointment_status">Appointment Status</string>
+    <string name="consultation_process">Consultation Process</string>
+    <string name="upcomingConsultation">Upcoming Consultation</string>
+    <string name="todayConsultation">Today\'s Consultation</string>
+    <string name="consents">Consents</string>
+    <string name="appointmentInfo">Appointment Info</string>
+    <string name="prescription">Prescription</string>
+    <string name="preview">Preview</string>
+
+    <string name="medicine">Medicine</string>
+    <string name="patient_prescription">Patient\'s Prescription</string>
+    <string name="clinicalNotes">Clinical Notes</string>
+    <string name="appointmentDate">Appointment Date</string>
+    <string name="appointmentDateTime">Appointment Date(Time)</string>
+    <string name="history">History</string>
+    <string name="time">Time</string>
+    <string name="coming_soon">
+Coming Soon
+</string>
+    <string name="duration">Duration</string>
+    <string name="dose">Dose</string>
+    <string name="profile">Profile</string>
+    <string name="all">All</string>
+    <string name="ops">Out Patients</string>
+    <string name="appts">Appointments</string>
+    <string name="invoice">Invoice</string>
+    <string name="thanku">Thank You</string>
+    <string name="paymentMethod">Payment Method</string>
+    <string name="email_ex">jen.wilson@example.com</string>
+    <string name="logout">Log out</string>
+    <string name="total">Total</string>
+    <string name="totalRevenue">Total Revenue</string>
+    <string name="totalPending">Total Pending</string>
+    <string name="completed">Completed</string>
+    <string name="totalcount">Total Count</string>
+    <string name="wip">WIP</string>
+    <string name="not_attend">Not attend</string>
+
+    <string name="ayushman_bh">Ayushman Bharat Health Account</string>
+    <string name="abha_health">ABHA health ID is a way to access and share health records digitally. Digital ABHA health ID is available for all. You can able create health id and ABHA address using AADHAAR number. Using mobile number only ABHA address can be created</string>
+    <string name="create_abha1">Create ABHA to access and share your health records</string>
+    <string name="aadharNo">AADHAAR Number</string>
+    <string name="i_provide_m">I provide my consent to Aayush to share my details with the National Health Authority for the purpose of creating my Health Account</string>
+    <string name="agree_to">Agree to the</string>
+    <string name="verifying_otp">Verifying OTP</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="otp_sent">An OTP has been sent to mobile number</string>
+    <string name="resend_otp_enable">Didn’t receive OTP? Resend OTP in</string>
+    <string name="verify">Verify</string>
+    <string name="skip">Skip for now</string>
+    <string name="agree">Agree to share profile details with NHA for creating ABHA address</string>
+    <string name="dob">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="gender_man">Gender<font color='#FE3232'>*</font></string>
+    <string name="mobileNo">Mobile Number</string>
+    <string name="abhaNo">ABHA Number</string>
+    <string name="mobile">Mobile</string>
+    <string name="address">Address</string>
+    <string name="hosp_address">Healthcare Technology Innovation centre (HTIC) 5th floor, Block C IITM Research Park, Kanagam road, Taramani, Chennai, Tamil Nadu - 600113</string>
+    <string name="phone">Phone</string>
+    <string name="abha_no">ABHA Number</string>
+    <string name="abha_no_new">ABHA Number : </string>
+    <string name="create_abha_no">Create ABHA Number</string>
+    <string name="done">Done</string>
+    <string name="select">Select Patient id/Phone no/ABHA No</string>
+    <string name="patient_id">Patient ID</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="selTime">Select Time</string>
+    <string name="morning">Morning</string>
+    <string name="b4Meal">Before Meal</string>
+    <string name="scribble">Scribble</string>
+    <string name="text">Text</string>
+    <string name="voice">Voice</string>
+    <string name="afterMeal">After Meal</string>
+    <string name="nine_am_11_am">9 AM to 11 AM</string>
+    <string name="eleven_am_1_pm">11 AM to 1 PM</string>
+
+    <string name="two_pm_4_pm">2 PM to 3 PM</string>
+    <string name="three_pm_4_pm">3 PM to 4 PM</string>
+
+    <string name="five_pm_7_pm">5 PM to 7 PM</string>
+    <string name="seven_pm_9_pm">7 PM to 9 PM</string>
+    <string name="noon">Afternoon</string>
+    <string name="uploadPhoto">Upload Photo using</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="patient_info">Patient Info</string>
+    <string name="patient_profile">Patient Profile</string>
+    <string name="patient_profile_space">Patients Profile</string>
+    <string name="past_visits">Past Visits</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="medicine_name">Medicine Name</string>
+    <string name="general_info">General Information</string>
+    <string name="patient_presc">Patient\'s Prescription</string>
+    <string name="medicine_form">
+Medicine Form, Dosage, Timings, Before/After Food?
+</string>
+    <string name="tablet">Tablet</string>
+    <string name="consumption_tablet">Consumption Tablet</string>
+    <string name="syrup">Syrup</string>
+    <string name="ointment">Ointment</string>
+    <string name="patName">Patient Name : </string>
+    <string name="slDate">Slot Date : </string>
+    <string name="slTime">Slot Time : </string>
+    <string name="injection">Injection</string>
+    <string name="appt_details">Appointment Details</string>
+    <string name="payment_info">Payment Details</string>
+    <string name="medical_records">Medical Records</string>
+    <string name="medical_history">Medical History</string>
+    <string name="enter_patient_id">Enter Patient ID</string>
+    <string name="continued">Continue</string>
+    <string name="createNewABHAaddr">Create New ABHA Address</string>
+    <string name="cancel">Cancel</string>
+    <string name="discard">Discard</string>
+    <string name="discount">Discount</string>
+    <string name="subtotal">Sub Total</string>
+    <string name="count">Count</string>
+
+    <string name="item">Item</string>
+    <string name="identificationType">Patient Identification Type</string>
+    <string name="submit">Submit</string>
+    <string name="scheduleAppt">Schedule an appointment</string>
+    <string name="save">Save</string>
+
+    <string name="view">View</string>
+    <string name="addPrescription">Add Prescription</string>
+    <string name="print">Print</string>
+    <string name="download">Download</string>
+    <string name="verify_token">Verify Token</string>
+    <string name="tokenPreview">Token Preview</string>
+    <string name="addCharges"> + Add Charges</string>
+    <string name="addChargesNew">Add Charges</string>
+    <string name="add">Add</string>
+    <string name="add_Charges">Add Charges</string>
+    <string name="edit_Charges">Edit Charges</string>
+    <string name="charge_type">Charge Type</string>
+    <string name="charge_type_label">Charge Type<font color='#FF0000'> *</font></string>
+    <string name="selectopdAppointNo">Select OPD/Appointment Number<font color='#FF0000'> </font></string>
+    <string name="charge_category">Charge Category</string>
+    <string name="charge_category_label">Charge Category<font color='#FF0000'> *</font></string>
+    <string name="charge_name">Charge Name</string>
+    <string name="charge_name_label">Charge Name<font color='#FF0000'> *</font></string>
+    <string name="notes">Notes</string>
+    <string name="std_charges">Standard Charges</string>
+
+    <string name="confirmAppt">Confirm Appointment</string>
+    <string name="startConsultation">Start Consultation</string>
+    <string name="token_verified">Token Verified</string>
+    <string name="add_new_patient">+ Add new patient</string>
+    <string name="print_token">Print Token</string>
+    <string name="slotDate">Slot Date</string>
+    <string name="dateSlot">Date &amp; Slot</string>
+    <string name="slotTime">Slot Time</string>
+    <string name="didn_t_reci">Didn\'t receive OTP? </string>
+    <string name="resend">Resend </string>
+    <string name="reschedule">Reschedule</string>
+    <string name="code">+91</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="closeConsultation">End consultation</string>
+    <string name="rows_per_page">Rows per page</string>
+    <string name="creditCard">Credit Card</string>
+    <string name="upi">UPI</string>
+    <string name="amountDue">Amount Due</string>
+    <string name="section">Section</string>
+    <string name="sectionId">Section ID</string>
+    <string name="chargeDesc">Charge Description</string>
+    <string name="qty">Qty</string>
+    <string name="quantity">Quantity</string>
+
+    <string name="unitPrice">Unit Price</string>
+    <string name="rupee0">\u20B9 0.0</string>
+    <string name="charges">Charges</string>
+    <string name="amt">Amount</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="abha_success">ABHA Created Successfully</string>
+    <string name="appointment_success">Appointment Booked Successfully</string>
+    <string name="name_man">Name<font color='#FE3232'>*</font></string>
+    <string name="dob_man">Date of Birth<font color='#FE3232'>*</font></string>
+    <string name="age_man">Age<font color='#FE3232'>*</font></string>
+    <string name="dob_format">DD-MM-YYYY</string>
+    <string name="date_format">YYYY-MM-DD</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="blood_group_man">Blood Group</string>
+    <string name="txt_clear_filter">Clear Filter</string>
+    <string name="age">Age</string>
+    <string name="opd_no">OPD No</string>
+    <string name="appt_date_time">Appointment Date(Time)</string>
+    <string name="consulting_doctor">Consulting Doctor</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="status">Status</string>
+    <string name="caseSheet">Case Sheet</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="phone_man">Phone<font color='#FE3232'>*</font></string>
+    <string name="email_man">Email id<font color='#FE3232'>*</font></string>
+    <string name="address_man">Address<font color='#FE3232'>*</font></string>
+    <string name="remarks">Remarks</string>
+    <string name="reason">Reason for cancellation</string>
+    <string name="searchDoctors">Search Doctor or Speciality..</string>
+    <string name="known_allergy">Any Known Allergies</string>
+    <string name="consulting_fee">Consulting fee</string>
+    <string name="fromDate">From Date</string>
+    <string name="toDate">To Date</string>
+    <string name="consultDoc">Consulting Doctor</string>
+    <string name="preferredDoc">Preferred Doctor</string>
+    <string name="consultFee">Consultant Fee</string>
+    <string name="additionalCharges">Additional Charges</string>
+    <string name="tax">Tax</string>
+    <string name="remove">Remove</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="amount">Amount</string>
+    <string name="amountToPay">Amount to pay</string>
+    <string name="action">Action</string>
+
+    <string name="totAmtPaid">Total Amount Paid</string>
+    <string name="payMode">Payment Mode</string>
+    <string name="paymentId">Payment ID</string>
+    <string name="netAmt">Net Amount</string>
+    <string name="consultType">Consulting Type</string>
+    <string name="apptNo">Appointment No.</string>
+    <string name="opdNo">OPD No.</string>
+    <string name="apptDate">Appointment Date</string>
+    <string name="apptDateSlot">Appointment Date &amp; Slot</string>
+    <string name="source">Source</string>
+    <string name="message">Message</string>
+    <string name="areyousure">Are you sure want to Delete</string>
+    <string name="tokenNo">Token No.</string>
+    <string name="scheme">Scheme</string>
+    <string name="cash">Cash</string>
+    <string name="online">Online</string>
+    <string name="cancelAppt">Cancel Appointment</string>
+    <string name="payLater">Pay Later</string>
+    <string name="makePayment">Make Payment</string>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="consumption">Consumption (In days)?</string>
+    <string name="ml_per_cons">ml per consumption</string>
+    <string name="tablets_per">Tablets per consumption?</string>
+    <string name="additional_info">Additional Information (Optional)</string>
+    <string name="add_medicine">+ Add Medicine</string>
+    <string name="rs">\u20B9</string>
+    <string name="invalidQR">Invalid QR</string>
+    <string name="no_network">Not connected to internet</string>
+    <string name="tokenVerified">
+Appointment token verified Successfully
+</string>
+    <string name="consultStartSuccess">
+Consultation started Successfully
+</string>
+    <string name="ahba_address">
+ABHA Address
+</string>
+    <string name="congratulations">
+congratulations! ABHA address Created successfully
+</string>
+    <string name="abha_address_link_success">congratulations! ABHA address linked successfully</string>
+    <string name="abha_no_link_success">
+congratulations! ABHA number linked successfully
+</string>
+    <string name="link_now">Link Now</string>
+    <string name="link_ahba_address">Link your Existing ABHA Address</string>
+    <string name="link_ahba_number">Link your Existing ABHA Number</string>
+    <string name="link_mobile_no">Use mobile number to create or link ABHA Address</string>
+    <string name="link_aadhaar">To create or link ABHA Address</string>
+    <string name="link_abha">Link ABHA</string>
+    <string name="abha_profile_det">ABHA Profile Details</string>
+    <string name="create_abha_addr">Create ABHA Address</string>
+    <string name="you_will_re">
+You will receive OTP Will be received to the Mobile number Linked With AADHAAR Number
+</string>
+    <string name="today">Today</string>
+    <string name="district">District</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="retake">Retake</string>
+    <string name="row">Row</string>
+    <string name="ai">AI</string>
+    <string name="pt1">PT - 1</string>
+    <string name="pt2">PT - 2</string>
+    <string name="pt3">PT - 3</string>
+    <string name="pt4">PT - 4</string>
+    <string name="pt5">PT - 5</string>
+    <string name="pt6">PT - 6</string>
+    <string name="avgVPT">Average VPT</string>
+    <string name="genReport">Generate Report</string>
+    <string-array name="navigation_drawer_items_array" tools:ignore="ExtraTranslation">
+        <item>Appointment</item>
+        <item>EMR</item>
+        <item>ABHA</item>
+        <item>Vitals</item>
+        <item>Billing</item>
+    </string-array>
+
+    <string-array name="navigation_drawer_items_array1" tools:ignore="ExtraTranslation">
+        <item>Appointment</item>
+        <item>EMR</item>
+        <item>ABHA</item>
+        <item>Vitals</item>
+
+    </string-array>
+
+    <string-array name="navigation_drawer_items_array2" tools:ignore="ExtraTranslation">
+        <item>Appointment</item>
+        <item>EMR</item>
+        <item>ABHA</item>
+
+    </string-array>
+
+    <string name="Chief_Complaints">Chief Complaints</string>
+    <string name="investigations_adviced">Investigation Advised</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="complaint_type">Complaint Type</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="Body_Site">Body Site</string>
+    <string name="Past_Treatment_History">Past Treatment History</string>
+    <string name="Past_Medical_History">Past Medical History</string>
+    <string name="diet_plan">Diet Plan</string>
+    <string name="treatment_advice">Treatment Advice</string>
+    <string name="diagnosisTreatAdv">Diagnosis &amp; Treatment Advice</string>
+    <string name="medication">Medication</string>
+    <string name="test_categories">Test Category</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="laboratory">Laboratory Name</string>
+    <string name="dosage">Dosage</string>
+    <string name="frequency">Frequency</string>
+    <string name="timing">Timing</string>
+    <string name="follow_up">Follow up</string>
+    <string name="followup_on">Follow up on</string>
+    <string name="consent_request">Consent Request</string>
+    <string name="request_consent">Request Consent</string>
+    <string name="patient_details">Patient Details</string>
+    <string name="purpose_of_request">Purpose of request</string>
+    <string name="health_info_from">Health info from</string>
+    <string name="dd_mm_yyyy">DD-MM-YYYY</string>
+    <string name="health_info_to">Health info to</string>
+    <string name="health_info_type">Health info type</string>
+    <string name="op_consultantion">OP Consultantion</string>
+    <string name="diagnostic_report">Diagnostic Report</string>
+    <string name="discharge_summary">Discharge Summary</string>
+    <string name="immunisation_record">Immunisation Record</string>
+    <string name="health_document_record">Health Document Record</string>
+    <string name="wellness_record">Wellness Record</string>
+
+    <string name="consent_expiry">Consent Expiry</string>
+
+
+    <string name="tap_to_mic_on">Tap to mic on</string>
+    <string name="add_new">New</string>
+    <string name="manual">Manual</string>
+    <string name="device">device</string>
+    <string name="date_time">Date &amp; Time</string>
+    <string name="temperature">Temperature</string>
+    <string name="pulse">Pulse</string>
+    <string name="blood_pressure">Blood pressure</string>
+    <string name="respiratory_rate">Respiratory Rate</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="spo2">SpO2</string>
+    <string name="type_here">Type here</string>
+    <string name="hours">Hours</string>
+    <string name="when">When</string>
+    <string name="complaint_remarks">Complaint Remarks</string>
+    <string name="add_clinical_notes">Add Clinical Notes</string>
+    <string name="back">Back</string>
+    <string name="complaint_date">Complaint Date</string>
+    <string name="add_vitals">Add vitals</string>
+    <string name="days">No. of Days</string>
+
+    <string name="tempe_unit">Temperature (°F)</string>
+    <string name="pulse_unit">Pulse (bpm)</string>
+    <string name="bp_unit">Blood Pressure (mm Hg)</string>
+    <string name="weight_unit">Weight (kg)</string>
+    <string name="height_unit">Height (cm)</string>
+    <string name="spo2_unit">SpO2 (%)</string>
+
+    <string name="price">Price</string>
+    <string name="email_login">Email</string>
+    <string name="doctor_not_assigned">Doctor not assigned</string>
+
+    <string name="phone_or_id">Phone Number or Patient ID</string>
+    <string name="totAmt">Total Amount</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="duration_count">Duration Count</string>
+    <string name="duration_period">Duration Period</string>
+    <string name="verify_abha">Verify ABHA</string>
+    <string name="multiple_profile">We found that your mobile number is already associated with multiple profiles. Please select the one you want to continue with.</string>
+    <string name="mobile_profile">We found that your mobile number is already associated with multiple profiles.</string>
+    <string name="get_profile">Get Profile</string>
+    <string name="select_artifacts">Select Artifacts</string>
+
+
+</resources>

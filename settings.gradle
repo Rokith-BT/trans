@@ -1,0 +1,31 @@
+pluginManagement {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://jitpack.io"
+        }
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+      //  maven { url "https://repo1.maven.org/maven2" }
+    }
+}
+
+rootProject.name = "OPHub"
+include ':app', ':omronconnectivitylibrary'
+include ':app'
+include ':QRGenearator'
+include ':SpeechSDKAndroid'
+include ':omronconnectivitylibraryassets'

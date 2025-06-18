@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/card_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/card_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_user"
+            android:layout_margin="8dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="140dp">
+
+            <TextView
+                android:id="@+id/card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/card_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a description for the card."
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/card_description_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a description for the card."
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:textColor="@android:color/darker_gray" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="age"
+                    android:id="@+id/txtAge"
+                    android:textSize="12sp"
+                    android:textColor="#8F98B3"/>
+          <!--      <View
+                    android:id="@+id/view"
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:background="#8F98B3"
+                    android:layout_marginLeft="10dp"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Genter"
+                    android:id="@+id/txtGenter"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#8F98B3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Genter"
+                    android:id="@+id/register"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#8F98B3"/>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentEnd="true"
+        android:id="@+id/card_image_2"
+        android:layout_width="20dp"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_arrow_right" />
+
+</RelativeLayout>

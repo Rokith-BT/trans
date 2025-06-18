@@ -1,0 +1,15 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="androidmads.library.qrgenearator" >
+4
+5    <uses-sdk android:minSdkVersion="24" />
+6
+7    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+7-->C:\Users\udhay\StudioProjects\op-hub-frontend\QRGenearator\src\main\AndroidManifest.xml:3:5-80
+7-->C:\Users\udhay\StudioProjects\op-hub-frontend\QRGenearator\src\main\AndroidManifest.xml:3:22-78
+8
+9    <application>
+9-->C:\Users\udhay\StudioProjects\op-hub-frontend\QRGenearator\src\main\AndroidManifest.xml:5:5-7:19
+10    </application>
+11
+12</manifest>

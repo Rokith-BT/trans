@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_rectangle_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textView"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:text="@string/create_abha_addr"
+            android:textAppearance="@style/patient_info" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:layout_width="455dp"
+            android:layout_height="470dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/size_20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="455dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/size_35dp"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="-1sp"
+                android:text="@string/abha_address"
+                android:textAppearance="@style/enter_text" />
+            <FrameLayout
+                android:layout_width="455dp"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/edtName"
+                    style="@style/editText"
+                    android:layout_width="455dp"
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:imeOptions="actionDone"
+                    android:maxLength="18"
+                    android:digits="qwertyuiopasdfghjklzxcvbnm1234567890._"  />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/txtsbx"
+                    android:textSize="16dp"
+                    android:layout_gravity="end"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="20dp"
+                    android:text=""/>
+
+
+
+
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="455dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center_vertical"
+                android:text=""
+                android:id="@+id/txtSpecial"
+                android:textColor="@color/red_text"
+                android:visibility="gone"
+                android:textAppearance="@style/enter_text" />
+            <TextView
+                android:layout_width="455dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/size_6dp"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center_vertical"
+                android:text="Special characters allowed - 1 dot (.) and/or 1 underscore (_) end"
+                android:id="@+id/txtSpecialend"
+                android:visibility="gone"
+                android:textColor="@color/red_text"
+                android:textAppearance="@style/enter_text" />
+            <TextView
+                android:layout_width="455dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/size_6dp"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center_vertical"
+                android:text=""
+                android:id="@+id/txtmim"
+                android:textSize="@dimen/size_text_12sp"
+                android:textAppearance="@style/enter_text" />
+
+
+            <TextView
+                android:layout_width="455dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/size_4dp"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center_vertical"
+                android:text="@string/suggested"
+                android:textAppearance="@style/enter_text" />
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/suggestion_txt_1"
+                android:layout_width="455dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/size_4dp"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/logout" />
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/suggestion_txt_2"
+                android:layout_width="455dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/size_4dp"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/logout" />
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/suggestion_txt_3"
+                android:layout_width="455dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/size_4dp"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/logout" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="@color/appbarColor"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    style="@style/DefaultButton"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:text="@string/continued"
+                    android:textAllCaps="false" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

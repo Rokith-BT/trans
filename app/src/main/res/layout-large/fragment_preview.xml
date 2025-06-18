@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/noDataLnr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imgNoData"
+                android:layout_width="270dp"
+                android:layout_height="260dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/size_100dp"
+                android:background="@drawable/no_data"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txtNoData"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_below="@+id/imgNoData"
+                android:gravity="center"
+                android:text="@string/noDataFound"
+                android:textAppearance="@style/doctorName"
+                android:visibility="visible" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/dataLnr"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/frame_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginEnd="@dimen/size_20dp"
+                android:layout_marginBottom="@dimen/size_100dp"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size_80dp">
+
+                            <TextView
+                                android:id="@+id/txtPatientName"
+                                style="@style/textView"
+                                android:layout_width="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtDate"
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentEnd="true" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/size_40dp"
+                                android:layout_below="@+id/txtPatientName"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/size_20dp"
+                                    android:layout_height="@dimen/size_20dp"
+                                    android:background="@drawable/call_icon" />
+
+                                <TextView
+                                    android:id="@+id/txtGender"
+                                    style="@style/textView14sp"
+                                    android:layout_width="wrap_content"
+                                    android:textStyle="normal" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/size_20dp"
+                                    android:layout_height="@dimen/size_20dp"
+                                    android:layout_marginStart="@dimen/size_20dp"
+                                    android:background="@drawable/call_icon" />
+
+                                <TextView
+                                    android:id="@+id/txtBloodGroup"
+                                    style="@style/textView14sp"
+                                    android:layout_width="wrap_content"
+                                    android:textStyle="normal" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/size_20dp"
+                                    android:layout_height="@dimen/size_20dp"
+                                    android:layout_marginStart="@dimen/size_20dp"
+                                    android:background="@drawable/call_icon" />
+
+                                <TextView
+                                    android:id="@+id/txtAge"
+                                    style="@style/textView14sp"
+                                    android:layout_width="wrap_content"
+                                    android:textStyle="normal" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/size_20dp"
+                                    android:layout_height="@dimen/size_20dp"
+                                    android:layout_marginStart="@dimen/size_20dp"
+                                    android:background="@drawable/call_icon" />
+
+                                <TextView
+                                    android:id="@+id/txtMobile"
+                                    style="@style/textView14sp"
+                                    android:layout_width="wrap_content"
+                                    android:textStyle="normal" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/size_20dp"
+                                    android:layout_height="@dimen/size_20dp"
+                                    android:layout_marginStart="@dimen/size_20dp"
+                                    android:background="@drawable/call_icon" />
+
+                                <TextView
+                                    android:id="@+id/txtEmail"
+                                    style="@style/textView14sp"
+                                    android:layout_width="wrap_content"
+                                    android:textStyle="normal" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/size_20dp"
+                                    android:layout_height="@dimen/size_20dp"
+                                    android:layout_marginStart="@dimen/size_20dp"
+                                    android:background="@drawable/call_icon" />
+
+                                <TextView
+                                    android:id="@+id/txtAddress"
+                                    style="@style/textView14sp"
+                                    android:layout_width="wrap_content"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearVitals"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size_120dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:text="@string/vitals"
+                                android:textStyle="normal" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/size_40dp"
+                                android:background="@color/preview_tbl_head_bg"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/tempe_unit"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/pulse_unit"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/bp_unit"
+                                    android:textStyle="normal" />
+
+
+                                <TextView
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/weight_unit"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/height_unit"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/spo2_unit"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/size_40dp"
+                                android:layout_marginTop="@dimen/size_6dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/txtTemp"
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/txtPulse"
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/txtBP"
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textStyle="normal" />
+
+                                <!--                        <TextView-->
+                                <!--                            android:id="@+id/txtRespRate"-->
+                                <!--                            style="@style/textView14sp"-->
+                                <!--                            android:layout_weight="1"-->
+                                <!--                            android:gravity="center"-->
+                                <!--                            android:textStyle="normal" />-->
+
+                                <TextView
+                                    android:id="@+id/txtWeight"
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/txtHeight"
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:id="@+id/txtSpo2"
+                                    style="@style/textView14sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearChiefComplaints"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:text="@string/Chief_Complaints"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/txtChiefComplaints"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size_6dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/size_10dp"
+                                android:textStyle="normal" />
+
+                            <TableLayout
+                                android:id="@+id/tblChiefComplaints"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size_6dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearPastTreatmentHistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:text="@string/Past_Medical_History"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/txtPastTreatmentHiostory"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size_6dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/size_10dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearDiagnosis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:text="@string/investigations_adviced"
+                                android:textStyle="normal" />
+
+                            <TableLayout
+                                android:id="@+id/tblDiagnosis"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size_6dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearPastTreatmentAdvice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:text="@string/diagnosisTreatAdv"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/txtTreatmentAdvice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size_6dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/size_10dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearDietPlan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:text="@string/diet_plan"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/txtDietPlan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size_6dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/size_10dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearMedication"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:text="@string/medication"
+                                android:textStyle="normal" />
+
+                            <TableLayout
+                                android:id="@+id/tblMedication"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size_6dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearFollowup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/textView"
+                                android:layout_width="wrap_content"
+                                android:text="@string/follow_up"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/txtFollowup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size_6dp"
+                                android:background="@color/white"
+                                android:padding="@dimen/size_10dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/DefaultButton"
+                android:layout_width="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/size_20dp"
+                android:text="@string/submit"
+                android:textAllCaps="false" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

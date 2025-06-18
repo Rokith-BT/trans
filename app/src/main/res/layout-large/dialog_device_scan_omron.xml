@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycDeviceList"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:id="@+id/pblay"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_60dp"
+            android:indeterminate="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/scanRtl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/relScan"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/blue_circle_scan_bg">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/imgScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:lottie_fileName="animation.json"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/scanning_for"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/relScan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:gravity="center"
+            android:text="@string/scanning_for"
+            android:textAppearance="@style/create_abha" />
+
+        <TextView
+            android:id="@+id/txt_device_name"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/scanning_for"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textAppearance="@style/create_abha"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txt_connecting"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txt_device_name"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/connected"
+            android:text="@string/connected"
+            android:textAppearance="@style/create_abha1"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

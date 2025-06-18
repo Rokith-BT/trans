@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textView"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:text="@string/link_abha"
+            android:textAppearance="@style/patient_info" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/linearVerifyOTP"
+        android:layout_width="555dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="222dp"
+            android:layout_height="192dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/verify_otp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/resendotpsuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:background="#4D22C55E"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="OTP resent successfuly"
+            android:textSize="12sp"
+           android:textColor="#22C55E"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/verifying_o"
+            android:layout_width="555dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="@string/otp_verification"
+            android:textAppearance="@style/verifying_otp" />
+
+        <LinearLayout
+            android:layout_width="555dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/otp_sent"
+                android:textAppearance="@style/create_abha1" />
+
+
+            <TextView
+                android:id="@+id/txtEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/edit"
+                android:textAppearance="@style/create_abha1"
+                android:textColor="@color/appbarColor"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mobilenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinview"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:itemBackground="@drawable/edit_text_otp"
+            android:textColor="#1E1F20"
+            android:textSize="@dimen/size_text_32sp"
+            app:hideLineWhenFilled="false"
+            app:itemCount="6"
+            app:itemHeight="50dp"
+            app:itemRadius="10dp"
+            app:itemSpacing="@dimen/size_20dp"
+            app:itemWidth="50dp"
+            app:lineColor="#1C2253" />
+
+        <TextView
+            android:layout_marginTop="@dimen/size_8dp"
+            android:id="@+id/otppinError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter the valid 6 digit OTP"
+            android:textColor="@color/red_text"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/txtInvaidotp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invalid OTP"
+            android:textColor="@color/red_text"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtmaxlimitotp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reached maximum limit for Resend OTP"
+            android:textColor="#FDB022"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearResendSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/enable_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/resend_otp_enable"
+                android:textAppearance="@style/i_provide_m" />
+
+            <TextView
+                android:id="@+id/txtSecs"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:text="59 sec"
+                android:textAppearance="@style/status_text"
+                android:textColor="@color/appbarColor" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtMob"
+            android:layout_width="455dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:text="@string/mobileNo"
+            android:textAppearance="@style/enter_text"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearMob"
+            android:layout_width="455dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/size_32dp"
+                android:layout_height="@dimen/size_18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:layout_marginEnd="@dimen/size_10dp"
+                android:background="@drawable/indian_flag" />
+
+            <View
+                android:layout_width="@dimen/size_16dp"
+                android:layout_height="@dimen/size_16dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/chevron_down" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:background="@color/view_color" />
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center"
+                android:text="@string/code"
+                android:textColor="@color/menuTxtColor" />
+
+            <EditText
+                android:id="@+id/edtMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center_vertical"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/menuTxtColor" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearResend"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/didnotreceive"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left"
+                android:lineSpacingExtra="7sp"
+                android:text="@string/didn_t_reci"
+                android:textAppearance="@style/didn_t_reci"
+                android:textColor="#737791"
+                android:translationY="-3.47sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="5dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/resend_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left"
+                android:lineSpacingExtra="7sp"
+                android:text="@string/resend"
+                android:textAppearance="@style/didn_t_reci"
+                android:textColor="#4657E9"
+                android:translationY="-3.47sp" />
+
+            <TextView
+                android:id="@+id/resend_otp_count"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left"
+                android:lineSpacingExtra="7sp"
+                android:text=" "
+                android:textAppearance="@style/didn_t_reci"
+                android:textColor="#4657E9"
+                android:translationY="-3.47sp" />
+
+        </LinearLayout>
+
+       <!-- <Button
+            android:id="@+id/btn_verify"
+            style="@style/DefaultButton"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:text="@string/verify"
+            android:textAllCaps="false" />-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/appbarColor"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_verify"
+                style="@style/DefaultButton"
+                android:layout_marginTop="25dp"
+                android:text="@string/verify"
+                android:textAllCaps="false" />
+        </FrameLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

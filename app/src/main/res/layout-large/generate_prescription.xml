@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/size_20dp"
+        android:gravity="center_vertical"
+        android:text="@string/patient_prescription"
+        android:textAppearance="@style/patient_info" />
+
+    <include layout="@layout/prescription_row_item" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycleView"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txtAddMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:text="@string/add_medicine"
+        android:textAppearance="@style/logout" />
+
+    <Button
+        android:id="@+id/btnGenPrescription"
+        style="@style/DefaultButton"
+        android:layout_margin="@dimen/size_20dp"
+        android:background="@drawable/rounded_rectangle_blue"
+        android:text="@string/generate_prescription"
+        android:textAllCaps="false" />
+
+</LinearLayout>

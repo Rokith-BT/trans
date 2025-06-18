@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/abha_bg" />
+
+    <RelativeLayout
+        android:id="@+id/relAbhaAddress"
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:layout_above="@+id/relAbhaNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="@dimen/size_60dp"
+        android:background="@drawable/rounded_rectangle_white"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgAbha"
+            android:layout_width="@dimen/size_70dp"
+            android:layout_height="@dimen/size_70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:background="@drawable/ic_abha" />
+
+        <TextView
+            android:id="@+id/txtAbhaAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_toEndOf="@+id/imgAbha"
+            android:gravity="center_vertical|bottom"
+            android:text="@string/ahba_address"
+            android:textAppearance="@style/patient_info" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_35dp"
+            android:layout_below="@+id/txtAbhaAddress"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgAbha"
+            android:gravity="center_vertical|top"
+            android:text="@string/link_ahba_address"
+            android:textAppearance="@style/abhaText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relAbhaNumber"
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:layout_above="@+id/imgClose"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_rectangle_white"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgAbha1"
+            android:layout_width="@dimen/size_70dp"
+            android:layout_height="@dimen/size_70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:background="@drawable/ic_abha" />
+
+        <TextView
+            android:id="@+id/txtAbhaNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_toEndOf="@+id/imgAbha1"
+            android:gravity="center_vertical|bottom"
+            android:text="@string/abhaNo"
+            android:textAppearance="@style/patient_info" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_35dp"
+            android:layout_below="@+id/txtAbhaNumber"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgAbha1"
+            android:gravity="center_vertical|top"
+            android:text="@string/link_ahba_number"
+            android:textAppearance="@style/abhaText" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relMobileNo"
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/imgClose"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginEnd="300dp"
+        android:background="@drawable/rounded_rectangle_white">
+
+        <ImageView
+            android:id="@+id/imgMobileNo"
+            android:layout_width="@dimen/size_70dp"
+            android:layout_height="@dimen/size_70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:background="@drawable/ic_mobile" />
+
+        <TextView
+            android:id="@+id/txtMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_marginStart="@dimen/size_10dp"
+
+            android:layout_toEndOf="@+id/imgMobileNo"
+            android:gravity="center_vertical|bottom"
+            android:text="@string/mobileNo"
+            android:textAppearance="@style/patient_info" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_below="@+id/txtMobileNo"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgMobileNo"
+            android:gravity="center_vertical|top"
+            android:text="@string/link_mobile_no"
+            android:textAppearance="@style/abhaText" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relAadhaarNo"
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/relMobileNo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/size_60dp"
+        android:layout_marginEnd="180dp"
+        android:background="@drawable/rounded_rectangle_white"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgAadhaarNo"
+            android:layout_width="@dimen/size_70dp"
+            android:layout_height="@dimen/size_70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:background="@drawable/ic_aadhaar" />
+
+        <TextView
+            android:id="@+id/txtAadhaarNo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_35dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imgAadhaarNo"
+            android:gravity="center_vertical|bottom"
+            android:text="@string/aadhaar_no"
+            android:textAppearance="@style/patient_info" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_35dp"
+            android:layout_below="@+id/txtAadhaarNo"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgAadhaarNo"
+            android:gravity="center_vertical|top"
+            android:text="@string/link_aadhaar"
+            android:textAppearance="@style/abhaText" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/close_dialog" />
+</RelativeLayout>

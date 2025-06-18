@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_appointment"
+        android:checkable="true"
+        android:icon="@drawable/appointment"
+        android:title="@string/appointment" />
+
+    <item
+        android:id="@+id/nav_emr"
+        android:checkable="true"
+        android:icon="@drawable/emr"
+        android:title="@string/emr" />
+
+    <item
+        android:id="@+id/nav_abha"
+        android:checkable="true"
+        android:icon="@drawable/abha"
+        android:title="@string/abha"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/nav_vitals"
+        android:checkable="true"
+        android:icon="@drawable/vitals"
+        android:title="@string/vitals" />
+
+    <item
+        android:id="@+id/nav_billing"
+        android:checkable="true"
+        android:icon="@drawable/billing"
+        android:title="@string/billing" />
+</menu>

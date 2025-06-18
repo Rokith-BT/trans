@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:tabIndicatorColor="@color/appbarColor"
+            app:tabSelectedTextColor="@color/appbarColor"
+            app:tabTextAppearance="@style/logout"
+            app:tabTextColor="@color/black">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="@string/appointment_status" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:text="@string/consultation_process" />
+        </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearApptStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="@dimen/size_100dp"
+                android:layout_marginEnd="@dimen/size_20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearOption"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/size_100dp"
+                android:layout_marginTop="@dimen/size_100dp"
+                android:layout_marginEnd="@dimen/size_100dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCancelAppt"
+                    style="@style/DefaultButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_blue_outline"
+                    android:fontFamily="@font/mulish_normal"
+                    android:text="@string/cancelAppt"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue_text" />
+
+
+                <Button
+                    android:id="@+id/btnReschedule"
+                    style="@style/DefaultButton"
+                    android:layout_marginStart="@dimen/size_16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_blue"
+                    android:fontFamily="@font/mulish_normal"
+                    android:text="@string/reschedule"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnSelDoctor"
+                    style="@style/DefaultButton"
+                    android:layout_marginStart="@dimen/size_16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_blue"
+                    android:fontFamily="@font/mulish_normal"
+                    android:text="@string/select_doctor"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearConsultStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/linearCount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size_20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

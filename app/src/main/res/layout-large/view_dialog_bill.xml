@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginHorizontal="@dimen/size_16dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textView"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:text="@string/charges"
+            android:textColor="@color/blue_text" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginHorizontal="@dimen/size_12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingVertical="@dimen/size_12dp"
+        android:backgroundTint="@color/loginBg"
+        android:background="@drawable/rect_edge_bg"
+        android:layout_marginVertical="@dimen/size_16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginBottom="@dimen/size_20dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:visibility="visible"
+                    style="@style/textView"
+                    android:layout_height="wrap_content"
+                    android:text="@string/consultFee"
+                    android:textColor="#737791"
+                    android:textSize="@dimen/size_text_14sp" />
+                <TextView
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:gravity="center"
+                    android:id="@+id/txtConsultantFee"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    style="@style/textView"
+                    android:text="₹ 0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/size_text_18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginBottom="@dimen/size_20dp"
+                android:layout_marginStart="@dimen/size_32dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:visibility="visible"
+                        style="@style/textView"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discount"
+                        android:textColor="#737791"
+                        android:textSize="@dimen/size_text_14sp" />
+                    <TextView
+                        android:visibility="visible"
+                        style="@style/textView"
+                        android:id="@+id/txtDiscountPercent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#737791"
+                        android:textSize="@dimen/size_text_14sp" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:gravity="center"
+                    android:id="@+id/txtDiscount"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    style="@style/textView"
+                    android:text="₹ 0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/size_text_18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearTxtAddiCharges"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginBottom="@dimen/size_20dp"
+                android:layout_marginStart="@dimen/size_32dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:visibility="visible"
+                    style="@style/textView"
+                    android:layout_height="wrap_content"
+                    android:text="@string/additionalCharges"
+                    android:textColor="#737791"
+                    android:textSize="@dimen/size_text_14sp" />
+                <TextView
+                    android:id="@+id/txtAdditionalCharges"
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    style="@style/textView"
+                    android:text="₹ 0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/size_text_18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginBottom="@dimen/size_20dp"
+                android:layout_marginStart="@dimen/size_32dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:visibility="visible"
+                    style="@style/textView"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subTotal"
+                    android:textColor="#737791"
+                    android:textSize="@dimen/size_text_14sp" />
+                <TextView
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:gravity="center"
+                    android:id="@+id/txtSubTotal"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    style="@style/textView"
+                    android:text="₹ 0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/size_text_18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginBottom="@dimen/size_20dp"
+                android:layout_marginStart="@dimen/size_32dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:visibility="visible"
+                        style="@style/textView"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tax"
+                        android:textColor="#737791"
+                        android:textSize="@dimen/size_text_14sp" />
+                    <TextView
+                        android:id="@+id/txtTaxpercent"
+                        android:visibility="visible"
+                        style="@style/textView"
+                        android:layout_height="wrap_content"
+                        android:textColor="#737791"
+                        android:textSize="@dimen/size_text_14sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:gravity="center"
+                    android:id="@+id/txtTax"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    style="@style/textView"
+                    android:text="₹ 0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/size_text_18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginBottom="@dimen/size_20dp"
+                android:layout_marginStart="@dimen/size_32dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:visibility="visible"
+                    style="@style/textView"
+                    android:layout_height="wrap_content"
+                    android:text="@string/netAmt"
+                    android:textColor="#737791"
+                    android:textSize="@dimen/size_text_14sp" />
+                <TextView
+                    android:layout_marginTop="@dimen/size_4dp"
+                    android:gravity="center"
+                    android:id="@+id/txtNetAmt"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    style="@style/textView"
+                    android:text="₹ 0.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_purple"
+                    android:textSize="@dimen/size_text_18sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/topLays"
+        android:layout_marginTop="10dp"
+        android:id="@+id/headerNewBillLnr"
+        android:background="@drawable/table_title_bg"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/size_60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/size_10dp"
+            android:weightSum="7"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textSize="@dimen/size_text_16sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/section"
+                android:textSize="@dimen/size_text_16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sectionId"
+                    android:textSize="@dimen/size_text_16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/qty"
+                    android:layout_marginHorizontal="@dimen/size_text_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qty"
+                    android:textSize="@dimen/size_text_16sp"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/chargess"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/charges"
+                    android:textSize="@dimen/size_text_16sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="@dimen/size_4dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/disc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discount"
+                    android:textSize="@dimen/size_text_16sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addChargess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addChargesNew"
+                    android:textSize="@dimen/size_text_16sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tax"
+                    android:textSize="@dimen/size_text_16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:textSize="@dimen/size_text_16sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/billingRecSub"
+        android:layout_below="@+id/headerNewBillLnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

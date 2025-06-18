@@ -1,0 +1,18 @@
+<!--<!DOCTYPE html>
+<html>
+<form method="post" action="https://pay.1pay.in/payment/payprocessorV2">
+<input name="merchantId" value="M00">
+<input name="reqData"
+        value="android">
+<input type="submit" value="Pay Now">
+</form>
+</html>-->
+<!DOCTYPE html>
+<html>
+<body onload="document.forms['paymentForm'].submit()">
+<form id="paymentForm" method="post" action="https://pay.1pay.in/payment/payprocessorV2">
+    <input type="hidden" name="merchantId" value="M00">
+    <input type="hidden" name="reqData" value="android">
+</form>
+</body>
+</html>

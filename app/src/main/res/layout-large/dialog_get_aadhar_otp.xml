@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textView"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:text="@string/link_abha"
+            android:textAppearance="@style/patient_info" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="455dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="455dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/size_35dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="-1sp"
+            android:text="@string/aadhaar_no"
+            android:textAppearance="@style/enter_text" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtAadhaarNo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center"
+                android:paddingStart="@dimen/size_10dp"
+                android:digits="0123456789 "
+                android:hint="@string/aadhaar_hint"
+                android:imeOptions="actionDone"
+                android:inputType="numberPassword"
+                android:maxLength="14"
+                android:textColor="@color/menuTxtColor" />
+
+            <CheckBox
+                android:id="@+id/chkPassword"
+                android:layout_width="@dimen/size_35dp"
+                android:layout_height="@dimen/size_35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="5dp"
+                android:button="@drawable/checkbox_background"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invalid AADHAR Number"
+            android:textColor="#FF0600"
+            android:layout_marginTop="5dp"
+            android:id="@+id/invalidNumber"
+            android:visibility="gone"
+            android:textSize="12sp"/>
+
+
+        <LinearLayout
+            android:layout_width="455dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/size_35dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chk"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:checked="true"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/agree_to"
+                android:textAppearance="@style/i_provide_m" />
+
+            <TextView
+                android:id="@+id/termscondition"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="1sp"
+                android:textColor="@color/blue_text"
+                android:text=" Terms &amp; Condition"
+                android:textAppearance="@style/i_provide_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="1sp"
+                android:text=" of NHB"
+                android:textAppearance="@style/i_provide_m" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/size_35dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chkAbhaNo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:checked="true"
+                            android:layout_gravity="center_vertical" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="1sp"
+                            android:clickable="false"
+                            android:justificationMode="inter_word"
+                            android:focusable="false"
+                            android:text="I am voluntarily sharing my Aadhar number/ Virtual ID byt the Unique Identification Authority of India (UIDAI) and my demographic information for the purpose of creating an Ayushman Bhart Health Account number ( ABHA number) and Ayushman Bharat Health Account address (ABHA Address). I authorize NHA to use my Aadaar number / Virtual ID for performing Aadhaar based authendication with UIDAI as per the provisio of he Aadhar (Targeted Delivery of Financial and other subsides, Benfits and Services) Act, 2016 for the aforesaid purpose. I understand that UIDAI will share my e-KYC details, or response of “yes” with NHA upon successful authentication."
+                            android:textAppearance="@style/i_provide_m" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chkAbhaNo2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:checked="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="1sp"
+                            android:justificationMode="inter_word"
+                            android:text="I intend to create Ayushman Bharat Health Account Number (ABHA number) and Ayushman Bharat Health Account address (ABHA Address) using document other than Aadhaar. (Click here to proceed further)"
+                            android:textAppearance="@style/i_provide_m" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chkAbhaNo3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:checked="true"
+                            android:layout_gravity="center_vertical" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="1sp"
+                            android:justificationMode="inter_word"
+                            android:text="I consent to usage of my ABHA address and ABHA number for linking of my legacy (past) health records and those which will be generated during this encounter."
+                            android:textAppearance="@style/i_provide_m" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chkAbhaNo4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:checked="true"
+                            android:layout_gravity="center_vertical" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="1sp"
+                            android:justificationMode="inter_word"
+                            android:text="I authorise the sharing of all my health records with healthcare provider(s) for the purpose of providing healthcare service to me during this encounter."
+                            android:textAppearance="@style/i_provide_m" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chkAbhaNo5"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:checked="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="1sp"
+                            android:justificationMode="inter_word"
+                            android:text="I consent to the anonymization and subsequent use of my health records for public health purpose."
+                            android:textAppearance="@style/i_provide_m" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chkAbhaNo6"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:checked="true"/>
+
+                        <TextView
+                            android:id="@+id/hospital_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="1sp"
+                            android:justificationMode="inter_word"
+                            android:text="I plenome, confirm that I have duly informed and explained the beneficiary of the contents of consent for aforementioned purposes."
+                            android:textAppearance="@style/i_provide_m" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chkAbhaNo7"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:checked="true"/>
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="1sp"
+                            android:justificationMode="inter_word"
+                            android:text="I have been explained about the consent as stated above and hereby provide my consent for the aforementioned purposes."
+                            android:textAppearance="@style/i_provide_m" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/appbarColor"
+                android:visibility="gone"/>
+
+            <!-- Button -->
+            <Button
+                android:id="@+id/btn_verify"
+                style="@style/DefaultButton"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:text="@string/verify"
+                android:textAllCaps="false" />
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>

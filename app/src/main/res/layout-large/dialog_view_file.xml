@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="600dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtClose"
+        android:layout_width="@dimen/size_100dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:text="@string/nav_close"
+        android:textAppearance="@style/logout" />
+
+    <ImageView
+        android:id="@+id/imgViewFile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

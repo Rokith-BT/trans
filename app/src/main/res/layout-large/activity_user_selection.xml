@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+    <TextView
+        android:id="@+id/select_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="-18sp"
+        android:text="@string/select_user"
+        android:fontFamily="@font/mulish_normal"
+        android:textAppearance="@style/select_user" />
+
+    <LinearLayout
+        android:id="@+id/linearUserProfile"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/size_64dp"
+        android:layout_marginEnd="@dimen/size_64dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relDoctor"
+            android:layout_width="241dp"
+            android:layout_height="207dp"
+            android:background="@drawable/user_profile_bg">
+
+            <ImageView
+                android:id="@+id/imgDoctor"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_doctor" />
+
+            <TextView
+                android:id="@+id/txtDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_below="@+id/imgDoctor"
+                android:layout_marginTop="@dimen/size_40dp"
+                android:gravity="center"
+                android:lineSpacingExtra="-8sp"
+                android:text="@string/doctor"
+
+                android:textAppearance="@style/doctor" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relNurse"
+            android:layout_width="241dp"
+            android:layout_height="207dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/user_profile_bg">
+
+            <ImageView
+                android:id="@+id/imgNurse"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_nurse" />
+            <!-- Auto layout, variables, and unit scale are not yet supported -->
+            <TextView
+                android:id="@+id/txtNurse"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_below="@+id/imgNurse"
+                android:layout_marginTop="@dimen/size_40dp"
+                android:gravity="center"
+                android:lineSpacingExtra="-8sp"
+                android:text="@string/nurse"
+                android:textAppearance="@style/doctor" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relReceptionist"
+            android:layout_width="241dp"
+            android:layout_height="207dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/user_profile_bg">
+
+            <ImageView
+                android:id="@+id/imgReceptionist"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_receptionist" />
+
+            <TextView
+                android:id="@+id/txtReceptionist"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_below="@+id/imgReceptionist"
+                android:layout_marginTop="@dimen/size_40dp"
+                android:gravity="center"
+                android:lineSpacingExtra="-8sp"
+                android:text="@string/receptionist"
+                android:textAppearance="@style/doctor" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/DefaultButton"
+        android:layout_width="788dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearUserProfile"
+        android:layout_marginStart="@dimen/size_64dp"
+        android:layout_marginTop="@dimen/size_40dp"
+        android:layout_marginEnd="@dimen/size_64dp"
+        android:text="@string/next"
+        android:background="@drawable/rounded_rectangle_blue"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

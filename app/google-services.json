@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "312150615764",
+    "project_id": "ophub-5a2ff",
+    "storage_bucket": "ophub-5a2ff.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312150615764:android:095848bcdb44eb42527d41",
+        "android_client_info": {
+          "package_name": "com.plenome.pos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUXqyRYI-_w0JglY5ver2KD_FOzagVDKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

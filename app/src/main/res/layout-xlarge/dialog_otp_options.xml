@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textView"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:text="@string/abha"
+            android:textAppearance="@style/patient_info" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="600dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/size_20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/textView"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:gravity="center"
+            android:text="@string/select_otp_option"
+            android:textAppearance="@style/ayushman_bh" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relAadhaarNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_margin="@dimen/size_8dp"
+            android:background="@drawable/rounded_rectangle_white">
+
+            <ImageView
+                android:id="@+id/imgAadhaarNo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:background="@drawable/ic_aadhaar" />
+
+            <TextView
+                android:id="@+id/txtAadhaarNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50dp"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/imgAadhaarNo"
+                android:gravity="center_vertical|bottom"
+                android:text="@string/aadhaar_otp"
+                android:textAppearance="@style/patient_info" />
+
+            <TextView
+                android:id="@+id/aadhar_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50dp"
+                android:layout_below="@+id/txtAadhaarNo"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:layout_toEndOf="@+id/imgAadhaarNo"
+                android:gravity="center_vertical|top"
+                android:text="@string/you_will_re"
+                android:textAppearance="@style/abhaText" />
+
+
+            <TextView
+                android:layout_below="@+id/aadhar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter valid ABHA address"
+                android:textColor="#FF0600"
+                android:layout_marginTop="5dp"
+                android:id="@+id/invalidAadhar"
+                android:visibility="gone"
+                android:textSize="12sp"/>
+
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/chevron_right"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relAbha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_below="@+id/relAadhaarNo"
+            android:layout_margin="@dimen/size_8dp"
+            android:background="@drawable/rounded_rectangle_white">
+
+            <ImageView
+                android:id="@+id/imgAbha"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:background="@drawable/ic_abha" />
+
+            <TextView
+                android:id="@+id/txtAbhaOTP"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50dp"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/imgAbha"
+                android:gravity="center_vertical|bottom"
+                android:text="@string/abha_otp"
+                android:textAppearance="@style/patient_info" />
+
+            <TextView
+                android:id="@+id/abha_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50dp"
+                android:layout_below="@+id/txtAbhaOTP"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="30dp"
+                android:layout_toEndOf="@+id/imgAbha"
+                android:gravity="center_vertical|top"
+                android:text="@string/you_will_re"
+                android:textAppearance="@style/abhaText" />
+
+            <TextView
+                android:layout_below="@+id/abha_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter valid ABHA address"
+                android:textColor="#FF0600"
+                android:layout_marginTop="5dp"
+                android:id="@+id/invalidABHA"
+                android:visibility="gone"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/chevron_right"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <FrameLayout
+                android:id="@+id/loaderOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="@color/zxing_transparent"
+                android:visibility="gone"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        </FrameLayout>
+
+
+
+        <TextView
+            android:id="@+id/errorTxt"
+            style="@style/textView"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:gravity="center"
+            android:textColor="@color/red_text"
+            android:textAppearance="@style/ayushman_bh" />
+    </LinearLayout>
+
+</RelativeLayout>

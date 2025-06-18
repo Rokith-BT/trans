@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_rectangle_gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textView"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:text="Add Patient"
+            android:textSize="18sp"
+            android:textAppearance="@style/patient_info" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/size_20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Found accounts already Existing with same Mobile Number select any one from the below or else you can create a New one"
+            android:textAppearance="@style/ayushman_bh" />
+
+
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/abh_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_create_abha_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textColor="#6070FF"
+        android:background="@drawable/addboader"
+        android:text="@string/createNewABHAaddr"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

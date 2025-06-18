@@ -1,0 +1,465 @@
+<resources>
+
+    <style name="welcome">
+        <item name="android:textSize">48sp</item>
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">#090914</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <!-- res/values/styles.xml -->
+    <style name="DialogSlideAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <!-- You can add windowExitAnimation here if needed -->
+    </style>
+
+    <style name="appBarName">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="inputLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/size_12dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:textSize">@dimen/size_text_16sp</item>
+    </style>
+
+    <style name="forgotPwdText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/size_12dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_text_16sp</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:textColor">@color/forgotPwdColor</item>
+    </style>
+
+    <style name="inputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_45dp</item>
+        <item name="android:textSize">@dimen/size_text_16sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:layout_marginTop">@dimen/size_10dp</item>
+        <item name="android:background">@drawable/rounded_rectangle_gray_outline</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/size_10dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="edittext_blue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/size_text_14sp</item>
+        <item name="android:textColor">#737791</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:background">@drawable/rounded_rectangle_light_blue</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/size_10dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="editText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">@dimen/size_text_16sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:background">@drawable/rounded_rectangle_gray_outline</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/size_10dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="spinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">@dimen/size_text_16sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/size_10dp</item>
+    </style>
+
+    <style name="master">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#8F98B3</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="textView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_35dp</item>
+        <item name="android:textSize">@dimen/size_text_16sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">@dimen/size_4dp</item>
+    </style>
+
+    <style name="textView14sp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_35dp</item>
+        <item name="android:textSize">@dimen/size_text_14sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">@dimen/size_4dp</item>
+    </style>
+
+
+    <style name="textViewLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_20dp</item>
+        <item name="android:textSize">@dimen/size_text_12sp</item>
+        <item name="android:textColor">#737791</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/size_4dp</item>
+    </style>
+
+    <style name="otpEditText">
+        <item name="android:layout_width">@dimen/size_50dp</item>
+        <item name="android:layout_height">@dimen/size_50dp</item>
+        <item name="android:textSize">@dimen/size_text_32sp</item>
+        <item name="android:textColor">#1E1F20</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:background">@drawable/edit_text_otp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+
+    </style>
+
+    <style name="ipEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">@dimen/size_text_16sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:layout_marginTop">@dimen/size_12dp</item>
+        <item name="android:background">@drawable/rounded_rectangle_light_blue</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/size_10dp</item>
+        <item name="android:layout_marginStart">-4dp</item>
+
+    </style>
+
+    <style name="blueBorderButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@drawable/rounded_rectangle_blue_outline</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:textColor">@color/appbarColor</item>
+        <item name="android:textSize">@dimen/size_text_16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="DefaultButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@drawable/rounded_rectangle_blue</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/size_text_16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="DefaultDisableButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@drawable/round_disable_button</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/size_text_16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="plenome">
+        <item name="android:textSize">36sp</item>
+        <item name="android:letterSpacing">-0.06</item>
+        <item name="android:textColor">#3A639C</item>
+        <item name="android:fontFamily">@font/poppins_normal</item>
+    </style>
+
+    <style name="welcome_name">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#05004E</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="good_morning">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#737791</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="password_reset">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="enter_your_email">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#737791</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+
+    <style name="email">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="doctorName">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="abhaText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#8F98B3</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="patient_info">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="mail_sent">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="password_ch">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="viewcolor">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#737791</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="menusel">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#92A4FF</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="select_user">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="doctor">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="login_as_user">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="password_det">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#737791</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="appointment">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#6070FF</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="slottime">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#6070FF</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="slottime_white">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="tblHead_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/size_50dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="profile">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#64748B</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="coming_soon">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#1C2253</item>
+    </style>
+
+    <style name="name">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#191D23</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="email_ex">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#A0ABBB</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="logout">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#6070FF</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="ayushman_bh">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="abha_health">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#8F98B3</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="morning">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#8F98B3</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="create_abha">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+    <!-- styles.xml -->
+    <style name="create_abha1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#737791</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="enter_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="status_no_text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#242E39</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="status_text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="i_provide_m">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#737791</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="verifying_otp">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="tokenNo">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="didn_t_reci">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#737791</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="welcome_text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#05004E</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="doc_sel">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#8696BB</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="tblHead_emr">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/size_50dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+    <style name="editVitals">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">@dimen/size_text_16sp</item>
+        <item name="android:textColor">#1C2253</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/size_10dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+
+    <style name="view_consent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_16dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/mulish_normal</item>
+    </style>
+
+
+</resources>

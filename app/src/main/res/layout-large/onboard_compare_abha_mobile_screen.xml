@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp">
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/mobilenewflow"
+                        android:fontFamily="@font/mulish_normal"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:textStyle="bold"
+                        android:text="ABDM"
+                        android:textColor="@color/comp_text_color" />
+
+                    <LinearLayout
+                        android:id="@+id/card_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/card_image"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/ic_user"
+                            android:scaleType="centerCrop" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="140dp"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:id="@+id/card_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/mulish_normal"
+                                android:text="Name"
+                                android:textColor="@color/comp_text_color"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/abhaname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/mulish_normal"
+                                android:text=""
+                                android:textColor="@color/vitaltbl_text"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:text="Date of Birth"
+                                    android:textColor="@color/comp_text_color"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/abhadob"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:textColor="@color/vitaltbl_text"
+                                    android:textSize="@dimen/size_text_14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:text="Gender"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/comp_text_color"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/abhagender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:textColor="@color/vitaltbl_text"
+                                    android:textSize="@dimen/size_text_14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:text="Mobile Number"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/comp_text_color"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/abhamobile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:textColor="@color/vitaltbl_text"
+                                    android:textSize="@dimen/size_text_14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:text="City"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/comp_text_color"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:textColor="@color/vitaltbl_text"
+                                    android:textSize="@dimen/size_text_14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:text="ABHA Number"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/comp_text_color"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/abhamobileadd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:text="-"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/vitaltbl_text"
+                                    android:textSize="@dimen/size_text_14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:text="ABHA Address"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/comp_text_color"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/abhaadrs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/mulish_normal"
+                                    android:text="-"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/vitaltbl_text"
+                                    android:textSize="@dimen/size_text_14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mulish_normal"
+                                android:text="Address"
+                                android:textStyle="bold"
+                                android:textColor="@color/comp_text_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/abhaaddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/mulish_normal"
+                                android:textColor="@color/vitaltbl_text"
+                                android:textSize="@dimen/size_text_14sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/mobilenewflow"
+                        android:fontFamily="@font/mulish_normal"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:textStyle="bold"
+                        android:text="HIMS"
+                        android:textColor="@color/comp_text_color" />
+
+                    <LinearLayout
+                        android:id="@+id/card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/card_images"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/ic_user"
+                            android:scaleType="centerCrop" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="140dp"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:id="@+id/card_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/mulish_normal"
+                                android:text="Name"
+                                android:textColor="@color/comp_text_color"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txt_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/mulish_normal"
+                                android:textColor="@color/vitaltbl_text"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <!-- Date of Birth Section -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/size_20dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mulish_normal"
+                                android:text="Date of Birth"
+                                android:textColor="@color/comp_text_color"
+                                android:textSize="12sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/patiendDob"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/mulish_normal"
+                                android:textColor="@color/vitaltbl_text"
+                                android:textSize="@dimen/size_text_14sp" />
+                        </LinearLayout>
+
+                        <!-- Gender Section -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mulish_normal"
+                                android:text="Gender"
+                                android:textStyle="bold"
+                                android:textColor="@color/comp_text_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/patiendgenter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/mulish_normal"
+                                android:textColor="@color/vitaltbl_text"
+                                android:textSize="@dimen/size_text_14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <!-- Mobile Number Section -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/size_20dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mulish_normal"
+                                android:text="Mobile Number"
+                                android:textStyle="bold"
+                                android:textColor="@color/comp_text_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/patiendmobile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/mulish_normal"
+                                android:textColor="@color/vitaltbl_text"
+                                android:textSize="@dimen/size_text_14sp" />
+                        </LinearLayout>
+
+                        <!-- City Section -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mulish_normal"
+                                android:text="City"
+                                android:textStyle="bold"
+                                android:textColor="@color/comp_text_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/mulish_normal"
+                                android:textColor="@color/vitaltbl_text"
+                                android:textSize="@dimen/size_text_14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <!-- ABHA Number Section -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/size_20dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mulish_normal"
+                                android:text="ABHA Number"
+                                android:textStyle="bold"
+                                android:textColor="@color/comp_text_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/mulish_normal"
+                                android:textColor="@color/vitaltbl_text"
+                                android:textSize="@dimen/size_text_14sp" />
+                        </LinearLayout>
+
+                        <!-- ABHA Address Section -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mulish_normal"
+                                android:text="ABHA Address"
+                                android:textStyle="bold"
+                                android:textColor="@color/comp_text_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/mulish_normal"
+                                android:textColor="@color/vitaltbl_text"
+                                android:textSize="@dimen/size_text_14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/size_20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/mulish_normal"
+                                android:text="Address"
+                                android:textStyle="bold"
+                                android:textColor="@color/comp_text_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/patiendaddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/mulish_normal"
+                                android:textColor="@color/vitaltbl_text"
+                                android:textSize="@dimen/size_text_14sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyt_no_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:background="@drawable/rounded_rectangle_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/mobilenewflow"
+                        android:fontFamily="@font/mulish_normal"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:textStyle="bold"
+                        android:text="HIMS"
+                        android:textColor="@color/comp_text_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/mulish_normal"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:textStyle="bold"
+                        android:text="No Record Found"
+                        android:textColor="@color/comp_text_color" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_20dp"
+                android:fontFamily="@font/mulish_normal"
+                android:gravity="center"
+                android:textSize="@dimen/size_text_14sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:id="@+id/linkpatiend"
+                    style="@style/DefaultButton"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="@dimen/size_32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_normal"
+                    android:text="Continue with ABDM Data"
+                    android:textAllCaps="false" />
+
+                <Button
+
+                    android:id="@+id/btnhisdata"
+                    style="@style/DefaultButton"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="@dimen/size_32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_normal"
+                    android:background="@drawable/rounded_rectangle_blue_outline"
+                    android:text="Continue with HIMS Data"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue_text" />
+
+                <Button
+
+                    android:id="@+id/onboard"
+                    style="@style/DefaultButton"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="@dimen/size_32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_normal"
+                    android:text="Create New Profile"
+                    android:textAllCaps="false"
+                    android:visibility="gone" />
+
+                <Button
+
+                    android:id="@+id/viewProfile"
+                    style="@style/DefaultButton"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="@dimen/size_32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/mulish_normal"
+                    android:text="View Profile"
+                    android:textAllCaps="false"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

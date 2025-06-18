@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+
+android {
+    defaultConfig {
+        minSdkVersion 24
+        compileSdk 34
+        targetSdk 34
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            consumerProguardFile('proguard-sdk.pro')
+        }
+    }
+    namespace 'androidmads.library.qrgenearator'
+}
+
+
+dependencies {
+    implementation 'com.google.zxing:core:3.5.0'
+    implementation 'com.journeyapps:zxing-android-embedded:4.1.0'
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+//            afterEvaluate {
+//                from components.release
+//            }
+        }
+    }
+}

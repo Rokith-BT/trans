@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_rectangle_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp">
+
+        <TextView
+            style="@style/textView"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:text="@string/uploadPhoto"
+            android:textColor="@color/upload_photo_title" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:src="@drawable/close_dialog" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCamera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_35dp"
+        android:layout_margin="@dimen/size_20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/size_35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/camera_upload" />
+
+        <TextView
+            style="@style/textView"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:text="@string/camera" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearGallery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_35dp"
+        android:layout_margin="@dimen/size_20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/size_35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/gallery_upload" />
+
+        <TextView
+            style="@style/textView"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:text="@string/gallery" />
+
+    </LinearLayout>
+
+</LinearLayout>

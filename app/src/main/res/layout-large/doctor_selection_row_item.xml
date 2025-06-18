@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearDocRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/rounded_rectangle_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgDoctor"
+            android:layout_width="@dimen/size_72dp"
+            android:layout_height="@dimen/size_72dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:background="@drawable/ic_user" />
+
+        <TextView
+            android:id="@+id/txtConsultingFee"
+            style="@style/good_morning"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@+id/txtFee"
+            android:gravity="center_vertical"
+            android:text="@string/consulting_fee" />
+
+        <TextView
+            android:id="@+id/txtFee"
+            style="@style/ayushman_bh"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/txtDocName"
+            style="@style/doctorName"
+            android:layout_width="600dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgDoctor"
+            android:gravity="center_vertical"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/txtDocDegree"
+            style="@style/ayushman_bh"
+            android:layout_width="600dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtDocName"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgDoctor"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/master" />
+
+        <TextView
+            android:id="@+id/txtDocSpeciality"
+            style="@style/logout"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDocDegree"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imgDoctor"
+            android:gravity="center_vertical"
+            android:text="sdfaksdflksjdfksadlfjsalk;skdlfjslakskaldfjsal;kdjfskldafskjdf;aslkfjsakjlfasklfasfdsdfsdafsadfs" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="@dimen/size_10dp"
+        android:background="@color/doc_sel_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_24dp"
+                android:layout_height="@dimen/size_24dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/experience" />
+
+            <TextView
+                android:id="@+id/txtExp"
+                style="@style/doc_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_24dp"
+                android:layout_height="@dimen/size_24dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/time" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                style="@style/doc_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/size_10dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_24dp"
+                android:layout_height="@dimen/size_24dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rating" />
+
+            <TextView
+                android:id="@+id/txtRatings"
+                style="@style/doc_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/DefaultButton"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:background="@drawable/rounded_rectangle_blue"
+        android:text="@string/scheduleAppt"
+        android:textAllCaps="false" />
+
+
+</LinearLayout>

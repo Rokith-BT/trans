@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/loginBg">
+
+        <TextView
+            style="@style/textView"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:text="@string/edit_Charges"
+            android:textColor="@color/blue_text" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textView"
+            android:layout_weight="1"
+            android:text="@string/additionalCharges"
+            android:textStyle="normal" />
+
+
+        <TextView
+            style="@style/textView"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:layout_weight="1"
+            android:text="@string/notes"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="@dimen/size_20dp"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtAdditionalCharges"
+            style="@style/editText"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:fontFamily="@font/mulish_normal"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtNotes"
+            style="@style/editText"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/mulish_normal"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/size_35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textView"
+                android:layout_weight="1"
+                android:text="@string/consulting_fee" />
+
+            <TextView
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/txtConsultingFee"
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textView"
+                android:layout_weight="1"
+                android:text="@string/additionalCharges" />
+
+            <TextView
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/txtAdditionalCharges"
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textView"
+                android:layout_weight="1"
+                android:text="@string/discount" />
+
+            <TextView
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/txtDiscount"
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textView"
+                android:layout_weight="1"
+                android:text="@string/subtotal" />
+
+            <TextView
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/txtSubTotal"
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textView"
+                android:layout_weight="1"
+                android:text="@string/tax" />
+
+            <TextView
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/txtTax"
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/view_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/textView"
+                android:layout_weight="1"
+                android:text="@string/netAmt" />
+
+            <TextView
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtNetAmt"
+                style="@style/textView"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_45dp"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/size_20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="@dimen/size_150dp"
+                android:layout_height="@dimen/size_45dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/size_20dp"
+                android:background="@drawable/rounded_rectangle_blue_outline"
+                android:fontFamily="@font/mulish_normal"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/size_text_16sp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="@dimen/size_150dp"
+                android:layout_height="@dimen/size_45dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/size_20dp"
+                android:background="@drawable/rounded_rectangle_blue"
+                android:fontFamily="@font/mulish_normal"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_text_16sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

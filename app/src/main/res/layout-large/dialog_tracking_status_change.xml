@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="490dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/rounded_rectangle_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp">
+
+        <TextView
+            style="@style/textView"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:text="@string/changeStatus"
+            android:textColor="@color/upload_photo_title" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:gravity="center_vertical"
+        android:text="@string/status"
+        android:textAppearance="@style/enter_text" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="@dimen/size_20dp"
+        android:layout_marginEnd="@dimen/size_20dp">
+
+        <Spinner
+            android:id="@+id/spinStatus"
+            style="@style/editText"
+            android:background="@drawable/rounded_rectangle_gray_outline" />
+
+        <View
+            android:layout_width="@dimen/size_32dp"
+            android:layout_height="@dimen/size_32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/chevron_down" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:gravity="center_vertical"
+        android:text="@string/message"
+        android:textAppearance="@style/enter_text" />
+
+    <EditText
+        android:id="@+id/edtMessage"
+        style="@style/editText"
+        android:layout_marginStart="@dimen/size_20dp"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:drawablePadding="10dp"
+        android:imeOptions="actionDone"
+        android:paddingEnd="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/size_20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/DefaultButton"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_blue_outline"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/appbarColor"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/DefaultButton"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_blue"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

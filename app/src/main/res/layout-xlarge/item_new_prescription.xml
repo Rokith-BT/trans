@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/abha_bg"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_60dp"
+    android:background="@color/abha_bg"
+    android:orientation="horizontal">
+
+
+    <EditText
+        android:id="@+id/tvMedicineName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_rectangle_white"
+        android:gravity="center"
+        android:hint="Medicine Name"
+        android:paddingStart="@dimen/size_4dp"
+        android:textColor="@color/black"
+        android:textAppearance="@style/email" />
+
+    <EditText
+        android:id="@+id/tvDosage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:hint="Dosage"
+        android:background="@drawable/rounded_rectangle_white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textAppearance="@style/email" />
+
+    <EditText
+        android:id="@+id/tvFrequency"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:hint="Frequency"
+        android:background="@drawable/rounded_rectangle_white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:textAppearance="@style/email" />
+
+    <EditText
+        android:id="@+id/tvTiming"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:hint="Timing"
+        android:background="@drawable/rounded_rectangle_white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textAppearance="@style/email" />
+
+    <EditText
+        android:id="@+id/tvDuration"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:hint="Duration"
+        android:background="@drawable/rounded_rectangle_white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:textAppearance="@style/email" />
+
+    <EditText
+        android:id="@+id/tvQuantity"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:hint="Quantity"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_rectangle_white"
+        android:gravity="center"
+        android:inputType="number"
+        android:textAppearance="@style/email" />
+
+    <EditText
+        android:id="@+id/tvRemarks"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1."
+        android:hint="Remarks"
+        android:background="@drawable/rounded_rectangle_white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textAppearance="@style/email" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_rectangle_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Delete Icon -->
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="1dp"
+            android:contentDescription="Delete"
+            android:src="@drawable/delete_icon" />
+
+        <!-- Edit Icon -->
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:contentDescription="Edit"
+            android:visibility="gone"
+            android:src="@drawable/edit_icon" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

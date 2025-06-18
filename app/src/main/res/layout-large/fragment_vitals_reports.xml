@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    tools:ignore="MissingDefaultResource">
+
+
+    <LinearLayout
+        android:paddingHorizontal="@dimen/size_10dp"
+        android:layout_margin="@dimen/size_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/backButton"
+            android:drawablePadding="@dimen/size_16dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+            android:textSize="@dimen/size_16dp"
+            android:paddingVertical="@dimen/size_6dp"
+            android:paddingHorizontal="@dimen/size_10dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report Name"/>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/size_16dp"
+            android:textSize="@dimen/size_16dp"
+            android:paddingHorizontal="@dimen/size_10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heading"/>
+        <TextView
+            android:layout_marginTop="@dimen/size_6dp"
+            android:textSize="@dimen/size_16dp"
+            android:paddingHorizontal="@dimen/size_10dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We record this with the systolic pressure first (on the top) and the diastolic pressure second (below). For example, if the systolic pressure is 120 mmHg (millimetres of mercury) and the diastolic pressure is 80 mmHg, we would describe the blood pressure as '120 over 80', written 120/80."/>
+        <TextView
+            android:layout_marginTop="@dimen/size_16dp"
+            android:textSize="@dimen/size_16dp"
+            android:paddingHorizontal="@dimen/size_10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Another Heading"/>
+        <TextView
+            android:layout_marginTop="@dimen/size_6dp"
+            android:textSize="@dimen/size_16dp"
+            android:paddingHorizontal="@dimen/size_10dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We record this with the systolic pressure first (on the top) and the diastolic pressure second (below). For example, if the systolic pressure is 120 mmHg (millimetres of mercury) and the diastolic pressure is 80 mmHg, we would describe the blood pressure as '120 over 80', written 120/80."/>
+        <TextView
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textSize="@dimen/size_16dp"
+            android:paddingHorizontal="@dimen/size_10dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We record this with the systolic pressure first (on the top) and the diastolic pressure second (below). For example, if the systolic pressure is 120 mmHg (millimetres of mercury) and the diastolic pressure is 80 mmHg, we would describe the blood pressure as '120 over 80', written 120/80."/>
+        <TextView
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textSize="@dimen/size_16dp"
+            android:paddingHorizontal="@dimen/size_10dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We record this with the systolic pressure first (on the top) and the diastolic pressure second (below). For example, if the systolic pressure is 120 mmHg (millimetres of mercury) and the diastolic pressure is 80 mmHg, we would describe the blood pressure as '120 over 80', written 120/80."/>
+        <TextView
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textSize="@dimen/size_16dp"
+            android:paddingHorizontal="@dimen/size_10dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We record this with the systolic pressure first (on the top) and the diastolic pressure second (below). For example, if the systolic pressure is 120 mmHg (millimetres of mercury) and the diastolic pressure is 80 mmHg, we would describe the blood pressure as '120 over 80', written 120/80."/>
+        <TextView
+            android:layout_marginTop="@dimen/size_12dp"
+            android:textSize="@dimen/size_16dp"
+            android:paddingHorizontal="@dimen/size_10dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We record this with the systolic pressure first (on the top) and the diastolic pressure second (below). For example, if the systolic pressure is 120 mmHg (millimetres of mercury) and the diastolic pressure is 80 mmHg, we would describe the blood pressure as '120 over 80', written 120/80."/>
+        <TextView
+            android:layout_marginTop="@dimen/size_16dp"
+            android:textSize="@dimen/size_16dp"
+            android:paddingHorizontal="@dimen/size_10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End of the Report"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom|end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/mapVitals"
+            android:paddingVertical="@dimen/size_10dp"
+            android:paddingHorizontal="@dimen/size_20dp"
+            android:layout_margin="@dimen/size_20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16dp"
+            android:background="@drawable/rounded_rectangle_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map Vitals"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/size_20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearPrescriptionView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/size_20dp"
+                android:gravity="center_vertical"
+                android:text="@string/patient_prescription"
+                android:textAppearance="@style/patient_info" />
+
+            <ListView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="@dimen/size_20dp" />
+
+            <TextView
+                android:id="@+id/txtAddMedicine"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginEnd="@dimen/size_20dp"
+                android:gravity="center"
+                android:text="@string/add_medicine"
+                android:textAppearance="@style/logout" />
+
+            <Button
+                android:id="@+id/btnGenPrescription"
+                style="@style/DefaultButton"
+                android:layout_margin="@dimen/size_20dp"
+                android:background="@drawable/rounded_rectangle_blue"
+                android:text="@string/generate_prescription"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearPrescSelection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    style="@style/textView"
+                    android:layout_width="wrap_content"
+                    android:text="@string/patient_presc"
+                    android:textAppearance="@style/patient_info" />
+
+                <TextView
+                    android:id="@+id/txt_tap_mic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tap_to_mic_on"
+
+                    android:layout_marginEnd="90dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toLeftOf="@id/record"
+                    android:textAppearance="@style/patient_info" />
+
+                <ImageView
+                    android:id="@+id/record"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/voice_mic"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/recordstop"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/recordaudio"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textView"
+                    android:layout_weight="1"
+                    android:text="@string/patient_name"
+                    android:textAppearance="@style/enter_text" />
+
+                <TextView
+                    style="@style/textView"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:text="@string/medicine_name"
+                    android:textAppearance="@style/enter_text" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <com.plenome.pos.views.ExtendedEditTExt
+                    android:id="@+id/edtPatientName"
+                    style="@style/edittext_blue"
+                    android:layout_weight="1"
+                    android:hint="@string/patient_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+
+                <com.plenome.pos.views.ExtendedEditTExt
+                    android:id="@+id/edtMedicineName"
+                    style="@style/edittext_blue"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:hint="@string/medicine_name"
+                    android:imeOptions="actionDone">
+
+                </com.plenome.pos.views.ExtendedEditTExt>
+
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/textView"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_weight="1"
+                android:text="@string/medicine_form"
+                android:textAppearance="@style/enter_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearTablet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_light_blue"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/tablet" />
+
+                    <TextView
+                        android:id="@+id/txtTablet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/size_10dp"
+                        android:gravity="center"
+                        android:text="@string/tablet"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearSyrup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_light_blue"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/syrup" />
+
+                    <TextView
+                        android:id="@+id/txtSyrup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/size_10dp"
+                        android:gravity="center"
+                        android:text="@string/syrup"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearOintment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_light_blue"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ointment" />
+
+                    <TextView
+                        android:id="@+id/txtOintment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/size_10dp"
+                        android:gravity="center"
+                        android:text="@string/ointment"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearInjection"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_light_blue"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/injection" />
+
+                    <TextView
+                        android:id="@+id/txtInjection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/size_10dp"
+                        android:gravity="center"
+                        android:text="@string/injection"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtMor"
+                    style="@style/edittext_blue"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/morning"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtNoon"
+                    style="@style/edittext_blue"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/noon"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtEve"
+                    style="@style/edittext_blue"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/evening"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtNight"
+                    style="@style/edittext_blue"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/night"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearBeforeFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_light_blue"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/before_meal" />
+
+                    <TextView
+                        android:id="@+id/txtBeforeMeal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/size_10dp"
+                        android:gravity="center"
+                        android:text="@string/b4Meal"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearAfterFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_light_blue"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/before_meal" />
+
+                    <TextView
+                        android:id="@+id/txtAfterMeal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/size_10dp"
+                        android:gravity="center"
+                        android:text="@string/afterMeal"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textView"
+                    android:layout_weight="0.20"
+                    android:text="@string/consumption"
+                    android:textAppearance="@style/enter_text" />
+
+                <TextView
+                    style="@style/textView"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="0.3"
+                    android:text="@string/ml_per_cons"
+                    android:textAppearance="@style/enter_text" />
+
+                <TextView
+                    style="@style/textView"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="0.3"
+                    android:text="@string/consumption_tablet"
+                    android:textAppearance="@style/enter_text" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.2">
+
+
+                    <com.plenome.pos.views.ExtendedEditTExt
+                        android:id="@+id/spinDays"
+                        style="@style/edittext_blue"
+                        android:hint="@string/consumption"
+                        android:inputType="number" />
+
+                    <!--                    <View-->
+                    <!--                        android:layout_width="@dimen/size_40dp"-->
+                    <!--                        android:layout_height="@dimen/size_40dp"-->
+                    <!--                        android:layout_alignParentEnd="true"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:layout_marginEnd="10dp"-->
+                    <!--                        android:background="@drawable/chevron_down" />-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="0.3">
+
+
+                    <com.plenome.pos.views.ExtendedEditTExt
+                        android:id="@+id/spinMlPerCons"
+                        style="@style/edittext_blue"
+                        android:hint="@string/ml_per_cons"
+                        android:inputType="number" />
+
+                    <!--                    <View-->
+                    <!--                        android:layout_width="@dimen/size_40dp"-->
+                    <!--                        android:layout_height="@dimen/size_40dp"-->
+                    <!--                        android:layout_alignParentEnd="true"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:layout_marginEnd="10dp"-->
+                    <!--                        android:background="@drawable/chevron_down" />-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="0.3">
+
+
+                    <com.plenome.pos.views.ExtendedEditTExt
+                        android:id="@+id/spinTabPerCons"
+                        style="@style/edittext_blue"
+                        android:hint="@string/consumption_tablet"
+                        android:inputType="number" />
+
+                    <!--                    <View-->
+                    <!--                        android:layout_width="@dimen/size_40dp"-->
+                    <!--                        android:layout_height="@dimen/size_40dp"-->
+                    <!--                        android:layout_alignParentEnd="true"-->
+                    <!--                        android:layout_centerVertical="true"-->
+                    <!--                        android:layout_marginEnd="10dp"-->
+                    <!--                        android:background="@drawable/chevron_down" />-->
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/textView"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_weight="1"
+                android:text="@string/additional_info"
+                android:textAppearance="@style/enter_text" />
+
+            <com.plenome.pos.views.ExtendedEditTExt
+                android:id="@+id/edtAdditionalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/rounded_rectangle_light_blue"
+                android:hint="@string/additional_info"
+                android:imeOptions="actionDone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/size_20dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnDiscard"
+                    style="@style/DefaultButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_blue_outline"
+                    android:text="@string/discard"
+                    android:textAllCaps="false"
+                    android:textColor="@color/appbarColor" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="@style/DefaultButton"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_blue"
+                    android:text="@string/save"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

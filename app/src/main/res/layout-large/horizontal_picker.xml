@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/baseView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/today"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_gravity="right"
+            android:textColor="@color/colorPrimary_horizontal"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnPreviousMonth"
+                android:layout_width="@dimen/size_24dp"
+                android:layout_height="@dimen/size_24dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_arrow_left" />
+
+            <TextView
+                android:id="@+id/tvMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_2dp"
+                android:textColor="@color/primaryTextColor_horizontal" />
+
+            <ImageView
+                android:id="@+id/btnNextMonth"
+                android:layout_width="@dimen/size_24dp"
+                android:layout_height="@dimen/size_24dp"
+                android:layout_marginStart="8dp"
+                android:rotation="180"
+                android:src="@drawable/ic_arrow_left" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.plenome.pos.views.horizontal.HorizontalPickerRecyclerView
+            android:id="@+id/rvDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="17dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+            <FrameLayout
+                android:id="@+id/vHover"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_day_hover"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="3"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

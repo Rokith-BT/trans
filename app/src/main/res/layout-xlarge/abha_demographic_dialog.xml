@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_gray"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textView"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:fontFamily="@font/mulish_normal"
+            android:gravity="center_vertical"
+            android:text="ABHA Created Successfully"
+            android:textAppearance="@style/patient_info" />
+
+        <ImageView
+
+            android:id="@+id/imgClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:visibility="visible"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_16dp"
+            android:orientation="horizontal">
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/card_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/ic_user"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="@color/upload_photo_title"
+                    android:textSize="@dimen/size_14dp" />
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karthikeyan"
+                    android:textColor="@color/dark_black"
+                    android:textSize="@dimen/size_20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/dob"
+                        android:textColor="@color/upload_photo_title"
+                        android:textSize="@dimen/size_14dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/gender"
+                        android:textColor="@color/upload_photo_title"
+                        android:textSize="@dimen/size_14dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/dob"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/size_16dp" />
+
+
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/gender"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/size_16dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mobileNo"
+                android:textColor="@color/upload_photo_title"
+                android:textSize="@dimen/size_14dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/abhaNo"
+                android:textColor="@color/upload_photo_title"
+                android:textSize="@dimen/size_14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/abha_address"
+                android:textColor="@color/upload_photo_title"
+                android:textSize="@dimen/size_14dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="xxxxxx"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/size_16dp" />
+
+
+            <TextView
+                android:id="@+id/abhanum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="xxxxxxx"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/size_16dp" />
+
+            <TextView
+                android:id="@+id/abha_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="xxxxxx"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/size_16dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/state"
+                android:textColor="@color/upload_photo_title"
+                android:textSize="@dimen/size_14dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/district"
+                android:textColor="@color/upload_photo_title"
+                android:textSize="@dimen/size_14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pincode"
+                android:textColor="@color/upload_photo_title"
+                android:textSize="@dimen/size_14dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="xxxxxx"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/size_16dp" />
+
+
+            <TextView
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="xxxxxxx"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/size_16dp" />
+
+            <TextView
+                android:id="@+id/pin_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="xxxxxx"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/size_16dp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_14dp"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:text="@string/address"
+            android:textColor="@color/upload_photo_title"
+            android:textSize="@dimen/size_14dp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:layout_weight="1"
+            android:text="xxxxx"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/size_16dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:layout_marginBottom="@dimen/size_16dp"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:id="@+id/btnAbha"
+                style="@style/DefaultButton"
+                android:layout_margin="20dp"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/mulish_normal"
+                android:text="ABHA Card"
+                android:textAllCaps="false" />
+
+            <Button
+
+                android:id="@+id/btnContinue"
+                style="@style/DefaultButton"
+                android:layout_margin="20dp"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/mulish_normal"
+                android:background="@drawable/rounded_rectangle_blue_outline"
+                android:text="Go To Profile"
+                android:textAllCaps="false"
+                android:textColor="@color/blue_text" />
+
+            <Button
+
+                android:id="@+id/onboard"
+                style="@style/DefaultButton"
+                android:layout_margin="20dp"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/mulish_normal"
+                android:text="Create New Profile"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+            <Button
+
+                android:id="@+id/viewProfile"
+                style="@style/DefaultButton"
+                android:layout_margin="20dp"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/mulish_normal"
+                android:text="View Profile"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

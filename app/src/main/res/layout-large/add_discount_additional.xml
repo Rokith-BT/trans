@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="720dp"
+    android:layout_height="550dp"
+    android:background="@drawable/rounded_rectangle_white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50dp">
+
+                <TextView
+                    style="@style/textView"
+                    android:layout_marginStart="@dimen/size_20dp"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:text="@string/edit" />
+
+                <ImageView
+                    android:id="@+id/imgClose"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:layout_marginEnd="@dimen/size_20dp"
+                    android:src="@drawable/close" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginEnd="@dimen/size_20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/discount"
+                    android:textAppearance="@style/enter_text" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="@dimen/size_16dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/discountPercent"
+                    android:textAppearance="@style/enter_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:layout_marginEnd="@dimen/size_20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtDiscountRate"
+                    style="@style/editText"
+                    android:layout_weight="1"
+                    android:maxLength="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edtDiscountPercent"
+                    style="@style/editText"
+                    android:layout_marginStart="@dimen/size_16dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginEnd="@dimen/size_20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/additionalCharges"
+                    android:textAppearance="@style/enter_text" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="@dimen/size_16dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/notes"
+                    android:textAppearance="@style/enter_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:layout_marginEnd="@dimen/size_20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtAdditCharges"
+                    style="@style/editText"
+                    android:layout_weight="1"
+                    android:maxLength="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edtNotes"
+                    style="@style/editText"
+                    android:layout_marginStart="@dimen/size_16dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionDone"
+                    android:inputType="text" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginEnd="@dimen/size_20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textView"
+                        android:layout_weight="1"
+                        android:text="@string/consultFee" />
+
+
+
+                    <TextView
+                        android:id="@+id/txtConsultFee"
+                        style="@style/textView"
+                        android:layout_height="53dp"
+                        android:layout_marginStart="@dimen/size_16dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textView"
+                        android:layout_weight="1"
+                        android:text="@string/additionalCharges" />
+
+
+                    <TextView
+                        android:id="@+id/txtAdditionalCharges"
+                        style="@style/textView"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/size_16dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearAdditChargeNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtAdditChargeNotes"
+                        style="@style/textView"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:text="@string/notes"
+                        android:textColor="@color/view_color"
+                        android:textSize="@dimen/size_text_14sp" />
+
+
+                    <TextView
+                        style="@style/textView"
+                        android:layout_marginStart="@dimen/size_16dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/textView"
+                            android:layout_width="wrap_content"
+                            android:text="@string/discount" />
+
+                        <TextView
+                            android:id="@+id/txtDiscountPercent"
+                            style="@style/textView"
+                            android:layout_marginStart="@dimen/size_20dp"
+                            android:maxLines="1"
+                            android:textColor="@color/view_color" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtDiscount"
+                        style="@style/textView"
+                        android:layout_marginStart="@dimen/size_16dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/textView"
+                            android:layout_width="wrap_content"
+                            android:text="@string/subTotal" />
+
+                        <TextView
+                            android:id="@+id/txtSubTotPercent"
+                            style="@style/textView"
+                            android:layout_marginStart="@dimen/size_20dp"
+                            android:textColor="@color/view_color" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtSubTotal"
+                        style="@style/textView"
+                        android:layout_marginStart="@dimen/size_16dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/textView"
+                            android:layout_width="wrap_content"
+                            android:text="@string/tax" />
+
+                        <TextView
+                            android:id="@+id/txtTaxpercent"
+                            style="@style/textView"
+                            android:layout_marginStart="@dimen/size_20dp"
+                            android:textColor="@color/view_color" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtTax"
+                        style="@style/textView"
+                        android:layout_marginStart="@dimen/size_16dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1dp"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/view_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/textView"
+                        android:layout_weight="1"
+                        android:text="@string/netAmt" />
+
+
+                    <TextView
+                        android:id="@+id/txtNetAmt"
+                        style="@style/textView"
+                        android:layout_marginStart="@dimen/size_16dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/size_20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@style/DefaultButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_blue_outline"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/appbarColor" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    style="@style/DefaultButton"
+                    android:layout_marginStart="@dimen/size_20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_rectangle_blue"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

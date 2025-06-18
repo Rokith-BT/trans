@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="25dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/imgProcess"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_bg" />
+
+        <View
+            android:id="@+id/viewProcess"
+            android:layout_width="@dimen/size_2dp"
+            android:layout_height="125dp"
+            android:layout_below="@+id/imgProcess"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_150dp"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp">
+
+        <TextView
+            android:id="@+id/txtProcessName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_35dp"
+            android:textAppearance="@style/patient_info" />
+
+        <TextView
+            android:id="@+id/txtDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/rounded_rectangle_gray_outline"
+            android:textAppearance="@style/status_text" />
+
+        <TextView
+            android:id="@+id/txtProcessDesc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40dp"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/status_text" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/morning" />
+
+    </LinearLayout>
+
+</RelativeLayout>
