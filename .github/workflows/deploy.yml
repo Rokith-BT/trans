@@ -22,7 +22,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build APK with Gradle
-        run: ./gradlew assembledevRelease
+        run: ./gradlew assembledevDebug
 
       - name: List APK output
         run: find app/build/outputs/apk -name "*.apk"
