@@ -15,7 +15,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: SonarQube Scan
-        uses: kitabisa/sonarqube-action@v1.2.0
+        # uses: kitabisa/sonarqube-action@v1.2.0
+        uses: sonarsource/sonarqube-scan-action@master
         with:
           host: ${{ secrets.SONAR_HOST_URL }}
           login: ${{ secrets.SONAR_TOKEN }}
@@ -42,5 +43,5 @@ jobs:
       #     Get-ChildItem -Path $path -Exclude "web.config" -Recurse | Remove-Item -Force -Recurse
          
 
-      - name: Copy Build to IIS Directory
-        run: Copy-Item -Recurse -Force "dist\*" "C:\inetpub\wwwroot\webapp\"
+      # - name: Copy Build to IIS Directory
+        # run: Copy-Item -Recurse -Force "dist\*" "C:\inetpub\wwwroot\webapp\"
