@@ -18,8 +18,8 @@ jobs:
         # uses: kitabisa/sonarqube-action@v1.2.0
         uses: sonarsource/sonarqube-scan-action@master
         with:
-          host: ${{ secrets.SONAR_HOST_URL }}
-          login: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URl: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
       # - name: Create .env.local file
       #   run: |
