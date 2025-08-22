@@ -17,6 +17,12 @@ jobs:
       - name: SonarQube Scan
         # uses: kitabisa/sonarqube-action@v1.2.0
         uses: sonarsource/sonarqube-scan-action@master
+        with:
+            args: >
+              -Dsonar.projectKey=react-app
+              -Dsonar.projectName="React App"
+              -Dsonar.sources=src
+          
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
