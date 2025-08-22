@@ -7,33 +7,39 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: [self-hosted, windows, test]
-  
+    # runs-on: [self-hosted, windows, test]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Create .env.local file
-        run: |
-          Set-Content -Path ".env.local" -Value @"
-          VITE_API_ENDPOINT=$env:REACT_APP_API_URL
-          # REACT_APP_OTHER=$env:REACT_APP_OTHER
-          "@
-        env:
-          REACT_APP_API_URL: ${{ secrets.VITE_API_ENDPOINT }}
-          REACT_APP_OTHER: local
+      - name: SonarQube Scan
+        uses: kitabisa/sonarqube-action@v1.2.0
+        with:
+          host: ${{ secrets.SONARQUBE_HOST }}
+          login: ${{ secrets.SONARQUBE_TOKEN }}
 
-      - name: Install Dependencies
-        run: npm ci
+      # - name: Create .env.local file
+      #   run: |
+      #     Set-Content -Path ".env.local" -Value @"
+      #     VITE_API_ENDPOINT=$env:REACT_APP_API_URL
+      #     # REACT_APP_OTHER=$env:REACT_APP_OTHER
+      #     "@
+      #   env:
+      #     REACT_APP_API_URL: ${{ secrets.VITE_API_ENDPOINT }}
+      #     REACT_APP_OTHER: local
 
-      - name: Build React App
-        run: npm run build
+      # - name: Install Dependencies
+      #   run: npm ci
 
-      - name: Clean IIS Directory
-        run: |
-          $path = "C:\inetpub\wwwroot\webapp"
-          Get-ChildItem -Path $path -Exclude "web.config" -Recurse | Remove-Item -Force -Recurse
+      # - name: Build React App
+      #   run: npm run build
+
+      # - name: Clean IIS Directory
+      #   run: |
+      #     $path = "C:\inetpub\wwwroot\webapp"
+      #     Get-ChildItem -Path $path -Exclude "web.config" -Recurse | Remove-Item -Force -Recurse
          
 
       - name: Copy Build to IIS Directory
