@@ -3,8 +3,14 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'com.google.gms.google-services'
     id 'com.google.firebase.crashlytics'
+    id "org.sonarqube" version "6.2.0.5505"
 }
-
+sonar {
+  properties {
+    property "sonar.projectKey", "ophub-test"
+    property "sonar.projectName", "ophub-test"
+  }
+}
 android {
     namespace 'com.plenome.pos'
     compileSdk 35
