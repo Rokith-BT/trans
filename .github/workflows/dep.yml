@@ -45,7 +45,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build APK with Gradle
-        run: ./gradlew assemble${{ env.branch_name }}${{ env.build_type }}
+        run: ./gradlew bundleuat${{ env.build_type }}
 
       - name: List APK output
         run: find app/build/outputs/apk -name "*.apk"
