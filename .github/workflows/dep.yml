@@ -1,6 +1,9 @@
 name: CI/CD deployments in Android/workflow
 
 on:
+  push:
+    branches:
+      - cloudDev
   workflow_dispatch:
 
 jobs:
