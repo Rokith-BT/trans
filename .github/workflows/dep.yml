@@ -1,4 +1,4 @@
-name: CI/CD deployments in Android
+name: CI/CD deployments in Android/workflow
 
 on:
   push:
