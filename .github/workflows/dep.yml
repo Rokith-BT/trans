@@ -4,7 +4,7 @@ on:
   push:
     branches: 
 #      - localDev
-      - cloudDev
+      # - cloudDev
       - ophub-test
       - uat
       - demo
