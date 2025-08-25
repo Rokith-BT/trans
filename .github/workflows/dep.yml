@@ -1,14 +1,6 @@
 name: CI/CD deployments in Android/workflow
 
 on:
-  push:
-    branches: 
-#      - localDev
-      # - cloudDev
-      - ophub-test
-      - uat
-      - demo
-      - prod
   workflow_dispatch:
 
 jobs:
